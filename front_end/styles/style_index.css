@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+    font-family: square;
+    src: url(fontes/square.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #12162B;*/
+    
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    overflow: hidden;
+    background-color: #12162B;
+    padding: 10px;
+}
+.cabecalho a{
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: square,sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    
+}
+.cabecalho_direita{
+    display: flex;
+    float: right;
+    
+}
+.cabecalho_direita a:hover{
+    background-color: #1c2241;
+}
+.cabecalho_login_direita a.cabecalho_botao_login{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
