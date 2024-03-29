@@ -1,60 +1,95 @@
 @charset "UTF-8";
 @font-face {
-    font-family: square;
-    src: url(fontes/square.ttf) format('truetype');
-}
+    font-family: "neuropol";
+    src: url(fontes/neuropol.otf) format('opentype');
 
+}
+@font-face {
+    font-family: "arcade";
+    src: url(fontes/ARCADECLASSIC.TTF) format('trupetype');
+}
 * {
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #12162B;*/
     
-}
+    width: 100%;
+	height: 100%;
+	background-image: url("img/fundo.jpg");
+	overflow: auto;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: scroll;
 
-/* CABEÇALHO */
+}
+/*          Fundo de imagem             */
+
+/*          LAYOUT DO CABEÇALHO            */
 .cabecalho{
     overflow: hidden;
-    background-color: #12162B;
-    padding: 10px;
+    background-color: #04050B;
+    padding: 5px;
+    border-style: hidden;
+    border-color: #0f132977;
+    backdrop-filter: blur(3px);
 }
+/*         Layout dos links             */
 .cabecalho a{
     color: #FFFFFF;
     float: left;
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-family: square,sans-serif;
-    font-size: 18px;
-    line-height: 25px;
+    font-family: "neuropol",sans-serif;
+    line-height: 20px;
     border-radius: 4px;
-    
 }
+/*   Separação da LOGO para os links direcionais */
 .cabecalho_direita{
     display: flex;
     float: right;
-    
+    font-size: 13px;
+    border-style: hidden;
+    border-width: 1px;
 }
 .cabecalho_direita a:hover{
     background-color: #1c2241;
 }
-.cabecalho_login_direita a.cabecalho_botao_login{
-    background-color: #FFFFFF;
-    color: #000000;
+/*            Layout link de LOGIN              */
+.cabecalho_login_direita{
+    background-color: #484E6B;
+    border-radius: 4px;
 }
-
-
-    
-
-
-
-
-
-
-
-
-
-
+.cabecalho_botao_login{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    width: 100px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff4b;
+}
+.cabecalho_login_direita a.cabecalho_botao_login:hover{
+    background-color: #FFFFFF;
+    color: #12162B;    
+}
+/*      Texto apresentação        */
+.apresentacao{
+    margin: 50px;
+    height: 50%;
+    width: 30%;
+    text-align: center;
+    border-style: double;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    backdrop-filter: blur(2px);
+    background-color: #484e6b33;
+}
+.apresentacao_titulo{
+    color: #FFFFFF;
+    /* Fonte não pegou, tentar consertar ou mudar
+    font-family: "arcade",serif; */
+}
