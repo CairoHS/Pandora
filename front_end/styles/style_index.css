@@ -4,33 +4,28 @@
     src: url(fontes/neuropol.otf) format('opentype');
 
 }
-@font-face {
-    font-family: "arcade";
-    src: url(fontes/ARCADECLASSIC.TTF) format('trupetype');
-}
 * {
     box-sizing: border-box;
 }
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
     width: 100%;
 	height: 100%;
-	background-image: url("img/fundo.jpg");
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
-	background-repeat: no-repeat;
+	background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
 	background-size: cover;
     background-attachment: scroll;
-
+    
 }
 /*          Fundo de imagem             */
 
 /*          LAYOUT DO CABEÇALHO            */
 .cabecalho{
     overflow: hidden;
-    background-color: #04050B;
+    background-color: #0c0f2056;
     padding: 5px;
     border-style: hidden;
     border-color: #0f132977;
@@ -77,19 +72,22 @@ body{
     color: #12162B;    
 }
 /*      Texto apresentação        */
-.apresentacao{
-    margin: 50px;
-    height: 50%;
-    width: 30%;
-    text-align: center;
-    border-style: double;
-    border-width: 1px;
-    border-color: #FFFFFF;
-    backdrop-filter: blur(2px);
-    background-color: #484e6b33;
+
+@font-face{
+    font-family: "04b";
+    src: url(fontes/04B_30__.TTF) format('truetype');
 }
 .apresentacao_titulo{
+    position: relative;
+    top: 50px;
+    left: 50px;
     color: #FFFFFF;
-    /* Fonte não pegou, tentar consertar ou mudar
-    font-family: "arcade",serif; */
+    font-family: "04b",serif; 
+    font-size: small;
+    font-weight: 100;
+    text-align: left;
+    width: 80em;
 }
+
+
+
