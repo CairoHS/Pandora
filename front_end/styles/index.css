@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "04b";
+    src: url(fontes/04B_30__.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "neuropol";
+    src: url(fontes/neuropol.otf) format('opentype');
+}
+
+body{
+    margin: 0px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+#cabecalho{
+    top: 100%;
+    margin: 0px;
+    backdrop-filter: blur(10px);
+    background-color: #1e89e7;
+    border: 2px solid #1e89e7;
+    width: 100%;
+    height: 56px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.247);
+}
+
+#nav{
+    margin: 0px;
+    width: 100%;
+    height: min-content;
+}
+
+#logo{   
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'neuropol';
+    color: #FFFFFF;
+    width: min-content;
+    padding: 15px 15px;
+    margin: 5px 5px;
+}
+
+
+#cabecalho_direita{
+    display: flex;
+    float: right;
+    font-size: 11px;
+    border-style: hidden;
+    border-width: 1px;
+}
+.link_cabecalho{
+    text-decoration: none;
+    font-family: 'neuropol';
+    font-size: 15px;
+    color: #ffffff;
+    padding: 15px 10px;
+    margin: 5px 2px;
+    border: 0.5px solid #005baa00;
+}
+.link_cabecalho:hover{
+    border: 0.5px solid rgba(255, 255, 255, 0.267);
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    background-color: #005BAA;
+}
+.link_cabecalho:active{
+    background-color: #FFFFFF;
+    color: #005BAA;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #167ad1, #FFFFFF);
+    margin: 0;
+}
+#gif_dev{
+    margin: 100px auto;
+    border: 5px solid #005BAA;
+    width: 400px;
+    height: 326px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.432);
+}
+
+#apresentacao_inicial {
+    backdrop-filter: blur(5px);
+    background-color: #005d92;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.349);
+    color: rgb(224, 224, 224);
+    width: 40%;   
+    height: 100%;
+    padding: 10px;
+    margin: 100px;
+    line-height: 50px;
+}
+
+#apresentacao_inicial > h1{
+    font-family: "04b", sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: #00000080;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+#apresentacao_inicial > p{
+    padding: 10px;
+    text-indent: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 20px;
+}
