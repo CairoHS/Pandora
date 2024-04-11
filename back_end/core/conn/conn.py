@@ -1,15 +1,10 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import Session
-from sqlalchemy.orm import DeclarativeBase
-from .end import url_object
+from sqlmodel import SQLModel, create_engine
+from endereco import url
 
-# Conexão com o banco de Dados
-engine = create_engine(url_object)
+url_banco = f"postgres://{url}"
 
-# variavel para dar commit para o banco
-session = Session(engine)
+engine = create_engine(url_banco)
 
 
-# classe base para criar os bancos de dados
-class Base(DeclarativeBase):
-    pass
+def criar_banco():
+    SQLModel.metadata.create_all(engine)
