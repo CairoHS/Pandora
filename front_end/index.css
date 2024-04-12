@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "04b";
+    src: url(fontes/04B_30__.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: "neuropol";
+    src: url(fontes/neuropol.otf) format('opentype');
+}
+
+:root{
+    --azul1: #012E40;
+    --azul2: #024959;
+    --azul3: #026773;
+    --azul4: #3CA6A6;
+    --beje:  #F2E3D5;
+    --cinzaescuro: #888888;
+    --cinzaclaro: #a3a3a363;
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--beje);
+    width: 100%; height: 100%;
+    margin: 0; padding: 10px 0px 10px 0px;
+}
+
+#logo{
+    display: flex;
+    width: 150px; height: 40px;
+}
+
+#imagemlogo{
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--azul4), var(--azul1));
+    width: 100%; 
+}
+
+#bordatriangulologo{
+    border-top: 40px solid var(--azul1);
+    border-right: 30px solid transparent;
+}
+
+#caixa_busca{
+    margin: auto;
+    width: 30%; height: 30px;
+    text-align: center;
+    
+}
+
+#pesquisa{
+    display: flex;
+    width: 100%;
+}
+
+#caixa_logo_pesquisa{
+    padding: 3px; margin: 0;
+    width: 20px; height: 20px;
+    border: 1px solid var(--cinzat);
+    border-right: 0px;
+    border-radius: 30px 0px 0px 30px;
+    background-color: var(--cinzat);
+}
+
+#logo_pesquisa{
+    max-width: 100%;
+}
+
+#busca{
+    width: 100%; 
+    max-width: 100%; 
+    background-color: var(--cinzat);
+    border-radius: 0px 40px 40px 0px;
+    border: 1px solid var(--cinzat);
+    color: var(--preto);
+}
+
+#bar{
+    margin: auto 10px;
+}
+
+#bar > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-family: 'neuropol';
+    color: var(--azul1);
+}
+
+/*Corpo*/
+
+#sessao_promocao{
+    background-color: #012E40;
+    color: var(--branco);
+    max-width: 100%;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.404);
+}
+
+#promocao{
+    margin: 0px 20px; padding: 10px;
+}
+
+#cronometro{
+    width: min-content;
+}
+
+#apresentacao{
+    width: 100%;
+    text-align: center;
+    background-color: var(--beje);
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner{
+    margin: 10px;
+    width: 500px;
+}
+
+#banner > img{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--cinzaescuro);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+}
+
+#texto{
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50%;height: 100%;
+    text-align: center;
+    background-color: #00000049;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+}
+
+#texto > h1{
+    padding: 10px 0px 0px 0px;
+    font-family: "04b", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: var(--azul2);
+}
+
+#texto > p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+#apresentacao_plataformas{
+    padding: 10px 0px;
+    background-color: var(--branco);
+    width: 100%;
+}
+
+.multiplataformas{
+    display: flex;
+    border: 1px solid var(--cinzaclaro);
+    border-radius: 10px;
+    width: min-content;
+    margin: 0px 10px; 
+}
+
+.multiplataformas > img{
+    padding: 10px;
+    width: 20px;
+    opacity: 30%;
+}
+
+#legenda{
+    margin: auto 0px; padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--azul1);
+}
