@@ -33,7 +33,7 @@
 
 #logo{
     display: flex;
-    width: 150px; height: 40px;
+    width: 150px; height: 50px;
 }
 
 #imagemlogo{
@@ -43,7 +43,7 @@
 }
 
 #bordatriangulologo{
-    border-top: 40px solid var(--azul1);
+    border-top: 50px solid var(--azul1);
     border-right: 30px solid transparent;
 }
 
@@ -121,25 +121,23 @@
 }
 
 #banner{
-    margin: 10px;
-    width: 500px;
+    margin: 30px;
+    width: 600px;
 }
 
 #banner > img{
     width: 100%;
-    border-radius: 20px;
-    border: 1px solid var(--cinzaescuro);
+    border-radius: 50px;
+    border: 3px solid var(--azul1);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
 }
 
 #texto{
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 50%;height: 100%;
+    padding: 20px; margin: 30px;
+    width: 45%; height: 100%;
     text-align: center;
-    background-color: #00000049;
-    border-radius: 20px;
+    background-color: #3CA6A6;
+    border-radius: 50px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
 }
 
@@ -147,7 +145,7 @@
     padding: 10px 0px 0px 0px;
     font-family: "04b", Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: var(--azul2);
+    color: var(--branco);
 }
 
 #texto > p{
@@ -156,6 +154,26 @@
     padding: 20px;
 }
 
+#caixa_alunos{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.aluno{
+    background-color: #026773;
+    width: 200px; height: 250pxpx;
+    padding: 20px;
+    border-radius: 50px;
+    color: var(--branco);
+}
+.aluno > img{
+    width: 150px;
+}
+
+.aluno > p{
+    text-align: justify;
+}
 #apresentacao_plataformas{
     padding: 10px 0px;
     background-color: var(--branco);
