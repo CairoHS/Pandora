@@ -11,34 +11,36 @@
 </head>
 <body>
 
-    <header id="cabecalho">
-        <!-- Área da logo -->
-        <div id="logo">
-            <img id="imagemlogo" src="img/logoheader.png" alt="Logo Pandora">
-            <div id="bordatriangulologo">
-            </div>
-        </div>
-        <!-- Área da caixa de pesquisa -->
-        <div id="caixa_busca">
-            <div id="pesquisa">
-                <div id='caixa_logo_pesquisa'>
-                    <img id='logo_pesquisa' src="img/lupa_icon.png" alt="Lupa de pesquisa">
-                </div>
-                <input type="text" id="busca" placeholder="Busque seu curso aqui...">
-            </div>
-        </div>
-        <!-- Links direcionais -->
-        <nav id="bar">
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-            <a href="">Como funciona?</a>
-            <a href="">Cadastrar</a>
-            <a href="">Login</a>
-        </nav>
-    </header>
+    <header id="cabecalho"> <!-- Cabecalho do site -->
 
-    <!-- Seção promocional -->
-    <section id="sessao_promocao">
+        <!-- Área da logo -->
+        <div id="logo"> <!-- Conteiner da logo-->
+            <div id="cont_img_logo"> <!-- Caixa para img da logo -->
+                <img id="imagemlogo" src="img/logoheader.png" alt="Logo Pandora"> <!-- Img da Logo -->
+            </div> <!-- Fim da caixa para img da logo-->
+            <div id="bordatriangulologo"> <!-- Borda para estilização da caixa logo-->
+            </div><!-- Fim da Borda para estilização da caixa logo-->
+        </div><!-- Fim do conteiner da logo-->
+
+        <!-- Área da caixa de pesquisa -->
+        <div id="caixa_busca"> <!-- Conteiner para caixa de busca de cursos-->
+                <div id='caixa_logo_pesquisa'> <!-- Caixa para icone lupa-->
+                    <img id='logo_pesquisa' src="img/lupa_icon.png" alt="Lupa de pesquisa"> <!-- Img da lupa-->
+                </div> <!-- Fim da Caixa para icone lupa-->
+                <input type="text" id="busca" placeholder="Busque seu curso aqui..."> <!-- Input de pesquisa de cursos -->
+        </div> <!-- Fim do Conteiner para caixa de busca de cursos -->
+
+        <!-- Links direcionais -->
+            <nav id="bar"> <!-- Caixa de links direcionais-->
+                <a href="">Sobre</a> <!-- Link para página página Sobre -->
+                <a href="">Contato</a> <!-- Link para página Contato-->
+                <a href="">Cadastrar</a> <!-- Link para página Cadastrar-->
+                <a href="">Login</a> <!-- Link para página Login-->
+            </nav> <!-- Fim da Caixa de links direcionais-->
+        </header> <!-- Fim do Cabecalho do site-->
+
+    <!-- Sessão promocional -->
+    <section id="sessao_promocao"> 
         <div id="promocao">
             <h1>Promoção limitada!</h1>
             <br>
@@ -47,22 +49,18 @@
         </div>
     </section>
 
-    <!-- BANNER da página -->
-    <main id="corpo">
-        <article id="apresentacao">
-
+    
+    <main id="corpo"> 
+        <article id="apresentacao"> 
             <section id="texto">
                 <h1>Imersao Tecnologica!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur saepe quas dolore quibusdam</p>
-                <button> Matricule-se</button>
-                <br><br>
-                <div id="caixa_alunos">
-                    <div class="aluno"><img src="img/aluno1_250px.png" alt="Aluno fictício 1"><br><br> <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio voluptatibus illum veritatis ex facere consequuntur quidem debitis "</p></div>
-                    <div class="aluno"><img src="img/aluno2_250px.png" alt="Aluno fictício 2"></div>
-                    <div class="aluno"><img src="img/aluno3_250px.png" alt="Aluno fictício 3"></div>
+    
+                    <br>
+                    <button id="matricular"> Matricule-se</button>
+                    <button id="comentarios"><span>Mais comentários</span></button>
                 </div>
             </section>
-            
             <div id="banner">
                 <img src="img/devesenvolvedor.gif" alt="Animação de um devesenvolvedor.">
             </div>
@@ -70,18 +68,47 @@
 
         <!-- Multiplataformas -->
         <article id="apresentacao_plataformas">
-            <section>
+            <section id="informacoes">
                 <div class="multiplataformas">
-                    <img src="img/icon_cell.png" alt="Celular">
-                    <span id="legenda">Multiplataformas</span>
+                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
+                    <span class="legenda">Versão Mobile disponível!</span>
                 </div>
+                
                 <div class="multiplataformas">
+                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
+                    <span class="legenda">Multiplataformas</span>
+                </div>
+                
+                <div class="multiplataformas">
+                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
+                    <span class="legenda">Multiplataformas</span>
                 </div>
             </section>
         </article>
-
-        
+        <article>
+            <div id="caixa_alunos">
+                <div class="aluno">
+                    <div class="imagem_aluno">
+                        <img src="img/aluno1_250px.png" alt="Aluno fictício 1">
+                    </div>
+                    <div id="texto_aluno">
+                        <h1>Nome do aluno, profissão</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio voluptatibus illum veritatis ex facere consequuntur quidem debitis "</p>
+                    </div>
+                </div>
+                <div class="aluno">
+                    <div class="imagem_aluno">
+                        <img src="img/aluno2_250px.png" alt="Aluno fictício 2">
+                    </div>
+                    <div id="texto_aluno">
+                        <h1>Nome do aluno, profissão</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio voluptatibus illum veritatis ex facere consequuntur quidem debitis "</p>
+                    </div>
+                </div>
+        </article>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Copyrigth</p>
+    </footer>
 </body>
 </html>

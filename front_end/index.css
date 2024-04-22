@@ -33,48 +33,50 @@
 
 #logo{
     display: flex;
+}
+
+#cont_img_logo{
     width: 150px; height: 50px;
 }
 
 #imagemlogo{
     padding: 5px;
     background-image: linear-gradient(to right, var(--azul4), var(--azul1));
-    width: 100%; 
+    width: 100%;
 }
 
 #bordatriangulologo{
-    border-top: 50px solid var(--azul1);
+    margin-left: 10px;
+    border-top: 47px solid var(--azul1);
     border-right: 30px solid transparent;
 }
 
 #caixa_busca{
-    margin: auto;
-    width: 30%; height: 30px;
+    margin: auto 0px auto 20px; 
+    width: 22vw; height: auto;
     text-align: center;
-    
+    border: 0.5px solid var(--cinzaclaro);
+    border-radius: 20px;
+    display: flex;
 }
 
-#pesquisa{
-    display: flex;
-    width: 100%;
-}
+
 
 #caixa_logo_pesquisa{
-    padding: 3px; margin: 0;
     width: 20px; height: 20px;
+    margin: auto; padding: 3px;
+    margin: 2px;
     border: 1px solid var(--cinzat);
-    border-right: 0px;
     border-radius: 30px 0px 0px 30px;
     background-color: var(--cinzat);
 }
 
 #logo_pesquisa{
-    max-width: 100%;
+    width: 100%;
 }
 
 #busca{
-    width: 100%; 
-    max-width: 100%; 
+    width: 100%; height: 30px;
     background-color: var(--cinzat);
     border-radius: 0px 40px 40px 0px;
     border: 1px solid var(--cinzat);
@@ -90,14 +92,14 @@
     text-transform: uppercase;
     margin: 0px 15px;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1vw;
     font-family: 'neuropol';
     color: var(--azul1);
 }
 
 /*Corpo*/
 
-#sessao_promocao{
+#sessao_promocao{ /* Promoção */
     background-color: #012E40;
     color: var(--branco);
     max-width: 100%;
@@ -106,13 +108,15 @@
 
 #promocao{
     margin: 0px 20px; padding: 10px;
+    font-size: 1.2vw;
 }
 
 #cronometro{
     width: min-content;
 }
-
+/* Apresentacao */
 #apresentacao{
+    display: flex;
     width: 100%;
     text-align: center;
     background-color: var(--beje);
@@ -121,83 +125,428 @@
 }
 
 #banner{
-    margin: 30px;
-    width: 600px;
+    margin: auto;
+    width: 40vw;
 }
 
 #banner > img{
-    width: 100%;
-    border-radius: 50px;
+    width: 100%; height: auto;
+    border-radius: 15px;
     border: 3px solid var(--azul1);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
 }
 
 #texto{
+    display: block;
     padding: 20px; margin: 30px;
-    width: 45%; height: 100%;
+    width: 40vw; height: 30vw;
     text-align: center;
-    background-color: #3CA6A6;
-    border-radius: 50px;
+    background-image: linear-gradient(to bottom, var(--azul4), var(--azul1));
+    border-radius: 15px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
 }
 
 #texto > h1{
     padding: 10px 0px 0px 0px;
     font-family: "04b", Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: var(--branco);
 }
 
 #texto > p{
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: justify;
-    padding: 20px;
+    padding: 10px;
+}
+
+#matricular{
+    margin: 0;
 }
 
 #caixa_alunos{
-    display: flex;
+    display: grid;
+    margin-bottom: 10px;
     width: 100%;
     justify-content: space-evenly;
 }
 
 .aluno{
-    background-color: #026773;
-    width: 200px; height: 250pxpx;
-    padding: 20px;
-    border-radius: 50px;
+    display: flex;
+    background-color: var(--cinzaclaro);
+    padding: 10px; margin: 0.5vw;
+    max-height: 5vw;
+    border-radius: 5px;
     color: var(--branco);
+    }
+
+.imagem_aluno{
+    width: 7vw;
+    margin: auto;
 }
-.aluno > img{
+
+.imagem_aluno > img{
+    width: 100%;
+    border: 2px solid var(--beje);
+    border-radius: 50%;
+}
+
+#texto_aluno {
+    text-align: left;
+}
+
+#texto_aluno > h1{
+    display: inline;
+    width: min-content;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+#texto_aluno > p{
+    text-align: justify;
+    font-size: 0.9vw;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 0px 0px 15px;
+}
+
+#comentarios{
+    margin: 1vw auto 0px auto;
     width: 150px;
 }
 
-.aluno > p{
-    text-align: justify;
-}
+/* Informativos */
+
 #apresentacao_plataformas{
     padding: 10px 0px;
     background-color: var(--branco);
     width: 100%;
 }
 
+#informacoes{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
 .multiplataformas{
     display: flex;
     border: 1px solid var(--cinzaclaro);
     border-radius: 10px;
-    width: min-content;
-    margin: 0px 10px; 
+    max-width: 500px;
+    min-width: 100px;
+    margin: 0px 1vw; padding: 5px;
+    
 }
 
-.multiplataformas > img{
-    padding: 10px;
-    width: 20px;
+.imagem_inf{
+    padding: 5px;
+    margin: auto;
+    width: 25px;
     opacity: 30%;
 }
 
-#legenda{
+.imagem_inf > img{
+    width: 100%;
+}
+
+.legenda{
     margin: auto 0px; padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 1vw;
     color: var(--azul1);
+}
+
+
+
+
+
+
+
+
+
+/* Tela com até 1024px NOTEBOOK*/
+@media (max-width: 1024px){ 
+
+    /*Cabecalho*/
+
+
+    #cont_img_logo{/* Caixa para img da logo */
+        width: 100px; height: 35px;/*Comprimento e altura*/
+    }
+    
+    #bordatriangulologo{/*Final da logo triangular*/
+        border-top: 35px solid var(--azul1); /*Borda superior*/
+        border-right: 30px solid transparent; /*Borda lateral direita*/
+        margin-left: 10px; /*Margem lateral esquerdo*/
+    }
+
+    #imagemlogo{/* Imagem da logo*/
+        padding: 5px;/*Espaçamento interno*/
+        background-image: linear-gradient(to right, var(--azul4), var(--azul1));/*Cor de fundo*/
+        width: 100%;/*Comprimento*/
+    }
+
+    #caixa_busca{ /*Caixa de pesquisa de cursos*/
+        margin: auto;/* Margem total */
+        width: 18%; height: 30px; /*Comprimento e altura*/
+        text-align: center; /*Alinhamento de texto*/
+    }
+
+    #bar > a{
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0px 15px;
+        font-weight: bold;
+        font-size: 1vw;
+        font-family: 'neuropol';
+        color: var(--azul1);
+    }
+
+    /*CORPO*/
+    
+   .aluno{
+        max-height: 4vw;
+   }
+
+   #comentarios{
+        margin: 0.5vw auto;
+   }
+
+    /*Informativos*/
+    .multiplataformas{
+        display: flex;
+        border: 1px solid var(--cinzaclaro);
+        border-radius: 10px;
+        max-width: 200px;
+        min-width: 150px;
+        margin: 0px 10px;
+    }
+    
+    .imagem_inf{
+        padding: 5px;
+        margin: auto;
+        width: 25px;
+        opacity: 30%;
+    }
+    
+    .imagem_inf > img{
+        width: 100%;
+    }
+    
+    .legenda{
+        margin: auto 0px; padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        color: var(--azul1);
+    }
+    
+}
+
+
+/* Tela com até 768px Tablet*/
+@media (max-width: 768px){
+
+   /*Informativos*/
+   #informacoes{
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: auto auto auto;
+   }
+
+   #comentarios{
+        display: none;
+   }
+
+   .imagem_inf{
+        padding: 5px;
+        margin: auto;
+        width: 25px;
+        opacity: 30%;
+    }
+
+    #informacoes{
+        display: grid;
+        padding: 15px;
+    }
+
+    .multiplataformas{
+        display: flex;
+        border: 1px solid var(--cinzaclaro);
+        border-radius: 10px;
+        max-width: 200px;
+        min-width: 150px;
+    }
+}
+
+
+
+/* Tela com até 425px Celular*/
+@media (max-width: 425px){
+    #cabecalho{ /*Header*/
+        display: grid;
+        padding: 0; margin: 0;
+        width: 100%;
+    }
+    
+    #logo{ /*Conteiner para logo*/
+        margin: 0; padding: 0;
+        width: 100vw;
+        justify-content: center;
+        background-color: var(--azul1);
+    }
+    
+    #cont_img_logo{ /*Conteiner para imagem da Logo*/
+        width: 130px; height: auto;
+    }
+    
+    #imagemlogo{ /*Imagem da logo*/
+        padding: auto;
+        justify-content: center;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        background-image: none;
+    }
+    
+    #bordatriangulologo{ /*Ponta do conteincer para imagem da logo*/
+        display: none;
+        
+    }
+    
+    #caixa_busca{ /*Caixa de pesquisa*/
+        display: none;
+    }
+    
+
+    #bar{ /*Conteiner para Links direcionais*/
+        display: flex;
+        justify-content: space-between;
+        max-width: 425px;
+        min-width: 320px;
+        margin: 0px;
+        width: 100vw;
+    }
+    
+    #bar > a{ /*Links direcionais*/
+        font-size: 8px;
+        padding: 10px;
+    }
+    
+    /*Corpo*/
+    
+    #sessao_promocao{ /* Promoção */
+        background-color: #012E40;
+        color: var(--branco);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.404);
+    }
+    
+    #promocao{
+        font-size: 10px;
+    }
+    
+    /* Apresentacao */
+    #apresentacao{
+        display: grid;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #banner{
+        margin: auto;
+        width: 80vw;
+    }
+    
+    #texto{
+        width: 75vw; height: 100vw;
+    }
+    
+    #texto > h1{
+        text-align: left;
+        font-size: 7vw;
+    }
+    
+    #texto > p{
+        font-size: 4vw;
+    }
+    
+    
+    /* Informativos */
+    
+    #apresentacao_plataformas{
+        display: none;
+    }
+    
+    #informacoes{
+        display: none;
+    }
+    
+    .multiplataformas{
+        display: none;
+    }
+    
+    
+    
+    #caixa_alunos{
+        display: grid;
+        margin: 10px 0px;
+        width: 100%;
+    }
+    
+    .aluno{
+        display: grid;
+        margin: 1vw;
+        max-height: 8vw;
+    }
+    
+    .imagem_aluno{
+        width: 30vw;
+        margin: auto;
+    }
+    
+    .imagem_aluno > img{
+        width: 100%;
+        border: 2px solid var(--beje);
+        border-radius: 50%;
+    }
+    
+    #texto_aluno {
+        text-align: left;
+    }
+    
+    #texto_aluno > h1{
+        display: inline;
+        width: min-content;
+        font-size: 1vw;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }
+    
+    #texto_aluno > p{
+        text-align: justify;
+        font-size: 0.9vw;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2px 0px 0px 15px;
+    }
+    
+    #comentarios{
+        margin: 1vw auto 0px auto;
+        width: 150px;
+    }
+
+}
+
+/* Tela com até 375px Celular*/
+@media (max-width: 375px){
+    #bar{ /*Conteiner para Links direcionais*/
+        max-width: 375px;
+        justify-content: space-between;
+    }
+    #bar > a{
+        margin: 0;
+    }
 }
