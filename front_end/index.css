@@ -11,44 +11,39 @@
 }
 
 :root{
-    --azul1: #012E40;
-    --azul2: #024959;
-    --azul3: #026773;
-    --azul4: #3CA6A6;
-    --beje:  #F2E3D5;
-    --cinzaescuro: #888888;
-    --cinzaclaro: #a3a3a363;
-    --branco: #ffffff;
-    --preto: #000000;
+    --fundo: #090F26;
+    --fundo2: #ffffff;
+    --fonte: #ffffff;
+    --fonte2: #000000;
+    --tom1: #101F38;
+    --tom2: #20385E;
+    --sombra: #00000036;
+    --sombra2: #ffffff36;
+    --fundoinput: #a3a3a315;
+    --bordas: #101f3857;
 }
 
 
 #cabecalho{
     display: flex;
     justify-content: space-between;
-    background-color: var(--beje);
+    background-color: var(--fundo);
     width: 100%; height: 100%;
-    margin: 0; padding: 10px 0px 10px 0px;
+    margin: 0; padding: 10px 0px;
 }
 
 #logo{
     display: flex;
+    margin-left: 30px; 
 }
 
 #cont_img_logo{
-    width: 150px; height: 50px;
+    margin-top: 5px;
+    width: 150px; height: min-content;;
 }
 
 #imagemlogo{
-    padding: 5px;
-    background-image: linear-gradient(to right, var(--azul4), var(--azul1));
     width: 100%;
-}
-
-#bordatriangulologo{
-    margin-left: 10px;
-    border-top: 47px solid var(--azul1);
-    border-right: 30px solid transparent;
 }
 
 #caixa_busca{
@@ -61,30 +56,32 @@
 }
 
 
-
 #caixa_logo_pesquisa{
-    width: 20px; height: 20px;
-    margin: auto; padding: 3px;
-    margin: 2px;
-    border: 1px solid var(--cinzat);
+    width: 20px; height: 30px;
+    margin: auto; padding: 1px 5px;
+    border: 1px solid var(--tom2);
+    border-right: 0px;
     border-radius: 30px 0px 0px 30px;
-    background-color: var(--cinzat);
+    background-color: var(--fundoinput);
 }
 
 #logo_pesquisa{
     width: 100%;
+    margin-top: 5px;
+    filter: invert();
 }
 
 #busca{
     width: 100%; height: 30px;
-    background-color: var(--cinzat);
+    background-color: var(--fundoinput);
+    border: 1px solid var(--tom2);
+    border-left: 0px;
     border-radius: 0px 40px 40px 0px;
-    border: 1px solid var(--cinzat);
-    color: var(--preto);
+    color: var(--fonte);
 }
 
 #bar{
-    margin: auto 10px;
+    margin: auto 15px;
 }
 
 #bar > a{
@@ -94,67 +91,68 @@
     font-weight: bold;
     font-size: 1vw;
     font-family: 'neuropol';
-    color: var(--azul1);
+    color: var(--fonte);
 }
 
-/*Corpo*/
+/* Promoção */
 
-#sessao_promocao{ /* Promoção */
-    background-color: #012E40;
-    color: var(--branco);
+#sessao_promocao{ 
+    background-color: var(--fundo2);
+    color: var(--fonte2);
     max-width: 100%;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.404);
+    box-shadow: 1px 1px 8px var(--sombra2);
 }
 
 #promocao{
     margin: 0px 20px; padding: 10px;
-    font-size: 1.2vw;
+    font-size: 15px;
 }
 
 #cronometro{
     width: min-content;
 }
+/*Corpo*/
 /* Apresentacao */
 #apresentacao{
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: var(--beje);
+    background-color: var(--fundo);
     display: flex;
     justify-content: space-between;
 }
 
 #banner{
-    margin: auto;
-    width: 40vw;
+    margin: 30px auto ;
+    width: 39vw;
 }
 
 #banner > img{
     width: 100%; height: auto;
     border-radius: 15px;
-    border: 3px solid var(--azul1);
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+    border: 3px solid var(--tom1);
+    box-shadow: 0px 0px 10px var(--sombra2);
 }
 
 #texto{
     display: block;
     padding: 20px; margin: 30px;
-    width: 40vw; height: 30vw;
+    width: 40vw; height: 29vw;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--azul4), var(--azul1));
+    background-image: linear-gradient(to bottom, var(--tom2), var(--tom1));
     border-radius: 15px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.219);
 }
 
 #texto > h1{
     padding: 10px 0px 0px 0px;
     font-family: "04b", Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    color: var(--branco);
+    font-size: 35px;
+    color: var(--fonte);
 }
 
 #texto > p{
-    font-size: 1.5vw;
+    font-size: 30px;
     text-align: justify;
     padding: 10px;
 }
@@ -163,88 +161,32 @@
     margin: 0;
 }
 
-#caixa_alunos{
-    display: grid;
-    margin-bottom: 10px;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.aluno{
-    display: flex;
-    background-color: var(--cinzaclaro);
-    padding: 10px; margin: 0.5vw;
-    max-height: 5vw;
-    border-radius: 5px;
-    color: var(--branco);
-    }
-
-.imagem_aluno{
-    width: 7vw;
-    margin: auto;
-}
-
-.imagem_aluno > img{
-    width: 100%;
-    border: 2px solid var(--beje);
-    border-radius: 50%;
-}
-
-#texto_aluno {
-    text-align: left;
-}
-
-#texto_aluno > h1{
-    display: inline;
-    width: min-content;
-    font-size: 1vw;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10px;
-}
-
-#texto_aluno > p{
-    text-align: justify;
-    font-size: 0.9vw;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 2px 0px 0px 15px;
-}
-
-#comentarios{
-    margin: 1vw auto 0px auto;
-    width: 150px;
-}
-
 /* Informativos */
 
 #apresentacao_plataformas{
     padding: 10px 0px;
-    background-color: var(--branco);
+    background-color: var(--fonte);
     width: 100%;
 }
 
 #informacoes{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    margin: 0px 1vw; padding: 15px;
 }
 
 .multiplataformas{
     display: flex;
-    border: 1px solid var(--cinzaclaro);
+    border: 1px solid var(--bordas);
     border-radius: 10px;
-    max-width: 500px;
-    min-width: 100px;
-    margin: 0px 1vw; padding: 5px;
-    
+    min-width: 30vw;
+    padding: 5px;
 }
 
 .imagem_inf{
-    padding: 5px;
-    margin: auto;
+    padding: 5px; margin: auto 0px;
     width: 25px;
-    opacity: 30%;
+    opacity: 60%;
 }
 
 .imagem_inf > img{
@@ -254,13 +196,10 @@
 .legenda{
     margin: auto 0px; padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-    color: var(--azul1);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--tom2);
 }
-
-
-
-
 
 
 
@@ -270,63 +209,34 @@
 @media (max-width: 1024px){ 
 
     /*Cabecalho*/
-
-
+    
     #cont_img_logo{/* Caixa para img da logo */
-        width: 100px; height: 35px;/*Comprimento e altura*/
+        width: 130px; /*Comprimento*/
+        transition: 0.5s;
     }
     
-    #bordatriangulologo{/*Final da logo triangular*/
-        border-top: 35px solid var(--azul1); /*Borda superior*/
-        border-right: 30px solid transparent; /*Borda lateral direita*/
-        margin-left: 10px; /*Margem lateral esquerdo*/
+    #caixa_logo_pesquisa{
+        height: 25px;
     }
 
-    #imagemlogo{/* Imagem da logo*/
-        padding: 5px;/*Espaçamento interno*/
-        background-image: linear-gradient(to right, var(--azul4), var(--azul1));/*Cor de fundo*/
-        width: 100%;/*Comprimento*/
-    }
-
-    #caixa_busca{ /*Caixa de pesquisa de cursos*/
-        margin: auto;/* Margem total */
-        width: 18%; height: 30px; /*Comprimento e altura*/
-        text-align: center; /*Alinhamento de texto*/
-    }
-
-    #bar > a{
-        text-decoration: none;
-        text-transform: uppercase;
-        margin: 0px 15px;
-        font-weight: bold;
-        font-size: 1vw;
-        font-family: 'neuropol';
-        color: var(--azul1);
+    #busca{
+        height: 25px;
+        font-size: 11px;
     }
 
     /*CORPO*/
     
-   .aluno{
-        max-height: 4vw;
-   }
-
-   #comentarios{
-        margin: 0.5vw auto;
-   }
+    #texto > h1{
+        font-size: 30px;
+    }
+    #texto > p{
+        font-size: 20px;   
+    }
 
     /*Informativos*/
-    .multiplataformas{
-        display: flex;
-        border: 1px solid var(--cinzaclaro);
-        border-radius: 10px;
-        max-width: 200px;
-        min-width: 150px;
-        margin: 0px 10px;
-    }
     
     .imagem_inf{
         padding: 5px;
-        margin: auto;
         width: 25px;
         opacity: 30%;
     }
@@ -336,11 +246,7 @@
     }
     
     .legenda{
-        margin: auto 0px; padding: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1vw;
-        font-weight: bold;
-        color: var(--azul1);
+    
     }
     
 }
@@ -349,35 +255,40 @@
 /* Tela com até 768px Tablet*/
 @media (max-width: 768px){
 
+
+    /*Promoçao*/
+    #promocao{
+        font-size: 12px;
+    }
+
+    /*Corpo*/
+
+    #texto > h1{
+        font-size: 20px;
+    }
+
+    #texto > p{
+        font-size: 15px;   
+    }
+
    /*Informativos*/
    #informacoes{
         display: grid;
-        column-gap: 50px;
-        grid-template-columns: auto auto auto;
-   }
-
-   #comentarios{
-        display: none;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        justify-content: space-around;
+        margin: 0px auto;
    }
 
    .imagem_inf{
         padding: 5px;
-        margin: auto;
         width: 25px;
         opacity: 30%;
     }
 
-    #informacoes{
-        display: grid;
-        padding: 15px;
-    }
 
     .multiplataformas{
-        display: flex;
-        border: 1px solid var(--cinzaclaro);
-        border-radius: 10px;
-        max-width: 200px;
-        min-width: 150px;
+        min-width: 30vw;
     }
 }
 
@@ -392,7 +303,7 @@
     }
     
     #logo{ /*Conteiner para logo*/
-        margin: 0; padding: 0;
+        margin: 10px 0px; padding: 0;
         width: 100vw;
         justify-content: center;
         background-color: var(--azul1);
@@ -409,11 +320,6 @@
         border: none;
         width: 100%;
         background-image: none;
-    }
-    
-    #bordatriangulologo{ /*Ponta do conteincer para imagem da logo*/
-        display: none;
-        
     }
     
     #caixa_busca{ /*Caixa de pesquisa*/
@@ -437,14 +343,10 @@
     
     /*Corpo*/
     
-    #sessao_promocao{ /* Promoção */
-        background-color: #012E40;
-        color: var(--branco);
-        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.404);
-    }
+    /* Promoção */
     
     #promocao{
-        font-size: 10px;
+        font-size: 12px;
     }
     
     /* Apresentacao */
@@ -456,7 +358,7 @@
     
     #banner{
         margin: auto;
-        width: 80vw;
+        width: 86vw;
     }
     
     #texto{
@@ -485,57 +387,6 @@
     
     .multiplataformas{
         display: none;
-    }
-    
-    
-    
-    #caixa_alunos{
-        display: grid;
-        margin: 10px 0px;
-        width: 100%;
-    }
-    
-    .aluno{
-        display: grid;
-        margin: 1vw;
-        max-height: 8vw;
-    }
-    
-    .imagem_aluno{
-        width: 30vw;
-        margin: auto;
-    }
-    
-    .imagem_aluno > img{
-        width: 100%;
-        border: 2px solid var(--beje);
-        border-radius: 50%;
-    }
-    
-    #texto_aluno {
-        text-align: left;
-    }
-    
-    #texto_aluno > h1{
-        display: inline;
-        width: min-content;
-        font-size: 1vw;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-left: 10px;
-    }
-    
-    #texto_aluno > p{
-        text-align: justify;
-        font-size: 0.9vw;
-        font-style: italic;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 2px 0px 0px 15px;
-    }
-    
-    #comentarios{
-        margin: 1vw auto 0px auto;
-        width: 150px;
     }
 
 }
