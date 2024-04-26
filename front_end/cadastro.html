@@ -9,58 +9,12 @@
 </head>
 <body>
     <header>
-            <img src="img_cadastro/logoheader.png" alt="">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img_cadastro/logoheader.png" alt="Logo">
+                </a>
+            </div>
     </header>
-            <section>
-                <form action="">
-                    <table cellspacing ='5' cellpadding="5"> <!-- Declaração da tabela-->
-                
-                        <tr> <!-- Titulo de cadastro -->
-                            <th colspan="2">Cadastro de usuário:</th>
-                        </tr>
-                        
-                        <tr> <!-- Dados Pessoais -- Input text, Email, Password-->
-                            <td>Nome completo:</td><td><input type="text" name="nome" minlength="3"></td>
-                        </tr>
-                        <tr>
-                            <td>CPF:</td> 
-                            <td><input type="text" name="cpf" \
-                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-                                title="Digite um CPF no formato: xxx.xxx.xxx-xx"></td>
-                        </tr>
-                        <tr>
-                            <td>E-mail:</td>
-                            <td><input type="email" name="email"></td>
-                        </tr>
-                        <tr>
-                            <td>Senha:</td> <td><input type="password" name="senha" id="senha"></td>
-                        </tr>
-                        <tr>
-                            <td>Confirmação de Senha:</td> <td><input type="password" name="senha" id="conf_senha"></td>
-                        </tr>
-                        <tr> <!-- Gênero sexual -- Utilização do radio -->
-                            <th colspan="2">Gênero:</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="genero" id="masculino" value="Masculino" checked><label for="">Masculino</label>
-                            </td>
-                            <td>
-                                <input type="radio" name="genero" id="feminino" value='Feminino'><label for="">Feminino</label>
-                                <input type="radio" name="genero" id="outro" value="Outro"><label for="">Outro</label>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            
-                        </tr>
-                        <tr> <!-- Opções para envio e resetar -- input reset, submit-->
-                            <td class="botao"><input type="submit" value="Enviar"></td>
-                            <td class="botao"><input type="reset" value="Limpar"></td>
-                        </tr>
-                    </table> <!-- Fim da tabela-->
-                </form>
-            </section>
-
+    
 </body>
 </html>

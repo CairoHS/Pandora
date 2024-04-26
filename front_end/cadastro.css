@@ -2,35 +2,35 @@
 
 :root{
     --fundo: #090F26;
-    --fundo2: #ffffff;
+
+    --fundo3: #111e50;
     --fonte: #ffffff;
     --fonte2: #000000;
     --tom1: #101F38;
     --tom2: #20385E;
     --sombra: #00000036;
-    --sombra2: #ffffff1f;
+    --sombra2: #ffffff31;
     --fundoinput: #a3a3a315;
     --bordas: #101f3857;
 }
 
 body{
-    background-color: var(--fundo);
-    padding: 0; margin: 0;
+    background-image: linear-gradient(to bottom, var(--fundo), var(--fundo3), var(--fundo));
+    padding: 10px; margin: 0;
+    min-height: 100vh;
 }
-
+ /*Cabeçalho*/
 header{
     text-align: center;
     margin: 0; padding: 0;
 }
-header > img{
-    max-width: 300px;
-    padding: 20px;
+
+#logo{
+    padding: 20px; margin: auto;
+    max-width: 500px;
 }
-section{
-    background-color: var(--sombra2);
-    max-width: 400px; height: 400px;
-    margin: auto; padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+
+#logo > a > img{
+    width: 100%;
 }
+

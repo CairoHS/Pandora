@@ -12,13 +12,15 @@
 
 :root{
     --fundo: #090F26;
-    --fundo2: #ffffff;
+    --fundo2: #111e50;
+    --fundoBox: #ffffff50;
+    --fundoPromo: #ffffff25;
     --fonte: #ffffff;
     --fonte2: #000000;
     --tom1: #101F38;
     --tom2: #20385E;
     --sombra: #00000036;
-    --sombra2: #ffffff36;
+    --sombra2: #ffffff67;
     --fundoinput: #a3a3a315;
     --bordas: #101f3857;
 }
@@ -27,7 +29,7 @@
 #cabecalho{
     display: flex;
     justify-content: space-between;
-    background-color: var(--fundo);
+    background-color:  var(--fundo2);
     width: 100%; height: 100%;
     margin: 0; padding: 10px 0px;
 }
@@ -97,16 +99,27 @@
 /* Promoção */
 
 #sessao_promocao{ 
-    background-color: var(--fundo2);
-    color: var(--fonte2);
-    max-width: 100%;
-    box-shadow: 1px 1px 8px var(--sombra2);
+    background-image: linear-gradient(to bottom, var(--fundo2),var(--fundo));
+    color: var(--fonte);
+    max-width: 100%; height: 100px;
+
 }
 
 #promocao{
+    display: flex;
     margin: 0px 20px; padding: 10px;
+    background-color: var(--fundoPromo);
+    border-radius: 5px;
     font-size: 15px;
+    justify-content: space-between;
 }
+
+#titulo_promo{
+    display: inline;
+    font-size: 1.5vw;
+    margin: 0px 5px; padding: 5px;
+}
+
 
 #cronometro{
     width: min-content;
@@ -117,21 +130,21 @@
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: var(--fundo);
+    background-color: var(--fundo) ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #banner{
-    margin: 30px auto ;
+    margin: auto 20px;
     width: 39vw;
 }
 
 #banner > img{
     width: 100%; height: auto;
     border-radius: 15px;
-    border: 3px solid var(--tom1);
-    box-shadow: 0px 0px 10px var(--sombra2);
+    border: 1px solid var(--bordas);
+    box-shadow: 0px 0px 30px var(--sombra2);
 }
 
 #texto{
@@ -139,9 +152,10 @@
     padding: 20px; margin: 30px;
     width: 40vw; height: 29vw;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--tom2), var(--tom1));
-    border-radius: 15px;
-    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.219);
+    background-color: var(--fundoBox);
+    border: 1px solid var(--bordas);
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px var(--sombra2);
 }
 
 #texto > h1{
@@ -165,8 +179,9 @@
 
 #apresentacao_plataformas{
     padding: 10px 0px;
-    background-color: var(--fonte);
+    background-image: linear-gradient(to top, var(--fundo2),var(--fundo));
     width: 100%;
+    background-color: var(--fundo2);
 }
 
 #informacoes{
@@ -201,11 +216,8 @@
     color: var(--tom2);
 }
 
-
-
-
-
 /* Tela com até 1024px NOTEBOOK*/
+
 @media (max-width: 1024px){ 
 
     /*Cabecalho*/
@@ -245,14 +257,10 @@
         width: 100%;
     }
     
-    .legenda{
-    
-    }
-    
 }
 
-
 /* Tela com até 768px Tablet*/
+
 @media (max-width: 768px){
 
 
@@ -295,6 +303,7 @@
 
 
 /* Tela com até 425px Celular*/
+
 @media (max-width: 425px){
     #cabecalho{ /*Header*/
         display: grid;
@@ -392,6 +401,7 @@
 }
 
 /* Tela com até 375px Celular*/
+
 @media (max-width: 375px){
     #bar{ /*Conteiner para Links direcionais*/
         max-width: 375px;
