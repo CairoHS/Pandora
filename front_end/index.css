@@ -25,11 +25,19 @@
     --bordas: #101f3857;
 }
 
+body{
+    background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, rgb(9,15,38),rgb(9,15,38));
+    background-repeat: no-repeat;
+    margin: 0; padding: 0;
+    color: var(--fonte);
+    min-height: 100vh;
+}
+
 
 #cabecalho{
     display: flex;
     justify-content: space-between;
-    background-color:  var(--fundo2);
+
     width: 100%; height: 100%;
     margin: 0; padding: 10px 0px;
 }
@@ -99,7 +107,7 @@
 /* Promoção */
 
 #sessao_promocao{ 
-    background-image: linear-gradient(to bottom, var(--fundo2),var(--fundo));
+
     color: var(--fonte);
     max-width: 100%; height: 100px;
 
@@ -130,7 +138,7 @@
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: var(--fundo) ;
+
     display: flex;
     justify-content: space-evenly;
 }
@@ -179,9 +187,7 @@
 
 #apresentacao_plataformas{
     padding: 10px 0px;
-    background-image: linear-gradient(to top, var(--fundo2),var(--fundo));
     width: 100%;
-    background-color: var(--fundo2);
 }
 
 #informacoes{

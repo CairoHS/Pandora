@@ -6,29 +6,29 @@
     <link rel="stylesheet" href="clear.css">
     <link rel="stylesheet" href="index.css">
     <link rel="short icon" href="img/icon.png" type="x-icon">
-    <script type="text/javascript" src="index.js"></script>
     <title>Pandora</title>
+    
 </head>
 <body>
-
+    
     <header id="cabecalho"> <!-- Cabecalho do site -->
-
+        
         <!-- Área da logo -->
         <div id="logo"> <!-- Conteiner da logo-->
             <div id="cont_img_logo"> <!-- Caixa para img da logo -->
                 <img id="imagemlogo" src="img/logoheader.png" alt="Logo Pandora"> <!-- Img da Logo -->
             </div> <!-- Fim da caixa para img da logo-->
         </div><!-- Fim do conteiner da logo-->
-
+        
         <!-- Área da caixa de pesquisa -->
         <div id="caixa_busca"> <!-- Conteiner para caixa de busca de cursos-->
-                <div id='caixa_logo_pesquisa'> <!-- Caixa para icone lupa-->
-                    <img id='logo_pesquisa' src="img/lupa_icon.png" alt="Lupa de pesquisa"> <!-- Img da lupa-->
-                </div> <!-- Fim da Caixa para icone lupa-->
+            <div id='caixa_logo_pesquisa'> <!-- Caixa para icone lupa-->
+                <img id='logo_pesquisa' src="img/lupa_icon.png" alt="Lupa de pesquisa"> <!-- Img da lupa-->
+            </div> <!-- Fim da Caixa para icone lupa-->
                 <input type="text" id="busca" placeholder="Busque seu curso aqui..."> <!-- Input de pesquisa de cursos -->
-        </div> <!-- Fim do Conteiner para caixa de busca de cursos -->
-
-        <!-- Links direcionais -->
+            </div> <!-- Fim do Conteiner para caixa de busca de cursos -->
+            
+            <!-- Links direcionais -->
             <nav id="bar"> <!-- Caixa de links direcionais-->
                 <a href="">Sobre</a> <!-- Link para página página Sobre -->
                 <a href="">Contato</a> <!-- Link para página Contato-->
@@ -36,33 +36,34 @@
                 <a href="login.html">Login</a> <!-- Link para página Login-->
             </nav> <!-- Fim da Caixa de links direcionais-->
         </header> <!-- Fim do Cabecalho do site-->
+        
+        <!-- Sessão promocional -->
+        <section id="sessao_promocao"> 
+            <div id="promocao">
+                <h1 id="titulo_promo">Promoção limitada!</h1> 
+                
+                <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In enim ratione, aut sint fugit sunt distinctio placeat! Excepturi cupiditate possimus quaerat nihil dolore facilis eveniet praesentium, adipisci, reiciendis itaque dicta. <br><br><span id="tempo"></span> </span></p>
+                
+                <img id="fechar_prom" src="img/icon_close.png" alt="Icone de fechar aba promocional">
 
-    <!-- Sessão promocional -->
-    <section id="sessao_promocao"> 
-        <div id="promocao">
-            <h1 id="titulo_promo">Promoção limitada!</h1> 
+            </div>
+        </section>
 
-            <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In enim ratione, aut sint fugit sunt distinctio placeat! Excepturi cupiditate possimus quaerat nihil dolore facilis eveniet praesentium, adipisci, reiciendis itaque dicta. <br><br> <span id="hora"></span> <span id="minutos"></span> <span id="segundos"></span></p>
-            <img src="img/icon_close.png" alt="Icone de fechar aba promocional">
-
-        </div>
-    </section>
-
-    
-    <main id="corpo"> 
-        <article id="apresentacao"> 
-            <section id="texto">
-                <h1>Imersao Tecnologica!</h1>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur saepe quas dolore quibusdam</p>
-                <br>
-                <button id="matricular"><span>Matricule-se</span></button>
-            </section>
-            <div id="banner">
-                <img src="img/devesenvolvedor.gif" alt="Animação de um devesenvolvedor.">
+        
+        <main id="corpo"> 
+            <article id="apresentacao"> 
+                <section id="texto">
+                    <h1>Imersao Tecnologica!</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur saepe quas dolore quibusdam</p>
+                    <br>
+                    <button id="matricular"><span>Matricule-se</span></button>
+                </section>
+                <div id="banner">
+                    <img src="img/devesenvolvedor.gif" alt="Animação de um devesenvolvedor.">
             </div>
         </article>
-
+        
         <!-- Multiplataformas -->
         <article id="apresentacao_plataformas">
             <div id="informacoes">
@@ -86,5 +87,6 @@
     <footer>
         <p>&copy; </p>
     </footer>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

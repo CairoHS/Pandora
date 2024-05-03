@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pandora - Cadastro</title>
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="short icon" href="img/icon.png" type="x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandora - Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+
 </head>
 <body>
-    <header>
-            <div id="logo">
-                <a href="index.html">
-                    <img src="img_cadastro/logoheader.png" alt="Logo">
-                </a>
-            </div>
-    </header>
+  <div id="voltar"> <!-- Caixa para botao de voltar-->
+    <a href="index.html"> <!-- Link de direcionamento para voltar a tela index.html-->
+      <img id="img_voltar" src="img_login/voltar.png" alt="Icone de seta para esquerda, para voltar a página inicial"> <!-- Icone de voltar -->
+    </a><!-- Fim do link de direcionamento para voltar a tela index.html-->
+  </div> <!-- Fim da caixa para botao de voltar-->
+
+  <main> <!-- Aba de informações -->
+
+    <article id="img-conteiner"> <!-- Artigo apresentando a Logo da empresa -->
+      <a href="index.html"> <!-- Link de direcionamento para voltar a tela index.html-->
+        <img id="img" src="img_login/logoheader.png" alt="Marca Pandora"> <!-- Icone de voltar -->
+      </a><!-- Fim do link de direcionamento para voltar a tela index.html-->
+    </article> <!-- Fim do artigo apresentando a Logo da empresa -->
+
+    <article class="login-container">
+      <h2>CADASTRE-SE</h2>
+      <hr>
+      <br>
+
+        <form method="post" action="">
+            
+            <span>Nome:</span>
+            <input type="text" name="nome" placeholder="Insira seu primeiro nome." required>
+            <br><br>
+
+            <span>Sobrenome:</span>
+            <input type="text" name="sobrenome" placeholder="Insira seu nome restante." required>
+            <br><br>
+
+            
+            <span>E-mail:</span>
+            <input type="email" placeholder="Exemplo@exemplo.com" required>
+            <br><br>
+            
+            <span>Login:</span><input type="password" placeholder="Senha" required>
+            <br><br>
     
+            <span>Senha:</span><input type="password" placeholder="Senha" required>
+            <br>
+
+            <p id="termo">Ao acessar este site, presumimos que você aceita estes <a href="https://www.jusbrasil.com.br/modelos-pecas/modelo-politica-de-privacidade/784935103" target="_blank">termos e condições</a> em sua totalidade. Não continue a utilizar o site da se não aceitar todos os termos e serviços referidos nesta página.</p>
+
+            <button type="submit">Acessar</button>
+        </form>
+    </article>
+  </main>
+  <footer><p>&copy; 2024</p></footer>
 </body>
 </html>
