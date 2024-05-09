@@ -38,8 +38,8 @@ body {
 }
     
 #img-conteiner{ /*configuração da imagem pandora */
-  max-width: 500px;
-  margin: 0px auto 50px;
+  max-width: 300px;
+  margin: 0px auto 80px;
 }
   
 #img{
