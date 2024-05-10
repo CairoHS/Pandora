@@ -18,6 +18,7 @@
     --fundorodape: #252941;
     --fonte: #ffffff;
     --fonte2: #000000;
+    --fonte3: #6e6e6e;
     --tom1: #101F38;
     --tom2: #20385E;
     --sombra: #00000036;
@@ -25,6 +26,7 @@
     --fundoinput: #a3a3a315;
     --bordas: #101f3857;
     --bordasclaras: #ffffff57;
+
 }
 
 body{
@@ -35,6 +37,51 @@ body{
     min-height: 100vh;
 }
 
+/*SESSÃO PROMOCIONAL*/
+
+
+#promocao{
+    display: flex;
+    margin: 0px ; padding: 7px;
+    background-color: var(--fundoPromo);
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+#titulo_promo{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    margin: auto;
+    margin-left: 10PX;
+}
+
+#texto_promo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+#fechar{
+    margin: auto 10px;
+    width: 40px;
+}
+
+#fechar_prom{
+    filter: invert();
+    width: 100%;
+}
+
+#tempo{
+    margin: auto 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#cronometro{
+    width: min-content;
+}
+
+/* CABEÇALHO*/
 
 #cabecalho{
     display: flex;
@@ -82,6 +129,7 @@ body{
 
 #foto_perfil > span{
     margin: auto 15px auto 0px;
+    width: min-content;
 }
 
 #foto_perfil > img{
@@ -89,64 +137,96 @@ body{
     border-radius: 20%;
 }
 
-/*SESSÃO PROMOCIONAL*/
 
+/* CORPO */
 
-#promocao{
-    display: flex;
-    margin: 0px 20px; padding: 10px;
-    background-color: var(--fundoPromo);
-    border-radius: 5px;
-    font-size: 15px;
-    justify-content: space-between;
-}
-
-#titulo_promo{
-    display: inline;
-    font-size: 1.5vw;
-    margin: 0px 5px; padding: 5px;
-}
-
-#fechar_prom{
-    filter: invert();
-}
-
-#cronometro{
+/*DIVULGAÇÃO DE CURSOS NOVOS*/
+#conteiner_cursos{
+    border: 1px solid var(--bordasclaras);
+    margin: 10px auto;
+    backdrop-filter: blur(5px);
     width: min-content;
 }
-/* CORPO */
+
+#conteiner_cursos > h1 {
+    margin-left: 20px;
+    font-size: 2vw;
+    font-family: "04b", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#conteiner_cursos > p{
+    width: 700px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #cursos{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 370px 370px 370px;
+    margin: 20px;
+    justify-content: center ;
     text-align: center;
+    width: min-content;
 }
 
 .caixa_cursos{
-    background-color: var(--fundo2);
-    margin: 20px; padding: 20px;
+    margin: 20px auto;
+    width: min-content;
     display: grid;
     grid-template-rows: 2;
-    gap: 2px;
-    border: 1px solid var(--bordasclaras);
     border-radius: 10px;
+}
+
+.caixa_cursos > h3{
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "04b", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 10px 0px 5px 0px;
+}
+
+
+.educador{
+    margin: 3px 0px;
+    display: flex;
+}
+
+.educador > label{
+    color: var(--fonte3);
+    text-align: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2px;
+}
+
+.iconprof{
+    width: 15px;
+}
+
+.iconprof > img{
+    width: 100%;
+    filter: invert();
+}
+
+.caixa_cursos > p{
+    margin: 0px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .video{
     width: max-content;
-    margin: auto;
+    margin: 0px auto;
     border-radius: 10px;
 }
 
 iframe{
-    border: 1px solid var(--bordasclaras);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
-/* Informativos */
-
-
+/*RODA PÉ*/
 footer{
     position: sticky;
     top: 100%;
@@ -160,6 +240,8 @@ footer > p{
     font-size: 17px;
 }
 
+
+/*RESPONSIVIDADE*/
 /* Tela com até 1024px NOTEBOOK*/
 
 @media (max-width: 1024px){ 
@@ -176,11 +258,6 @@ footer > p{
     }
 
     /*CORPO*/
-  
-
-    /*Informativos*/
-    
-    
 }
 
 /* Tela com até 768px Tablet*/
