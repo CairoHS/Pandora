@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="index.css">
-    <link rel="short icon" href="img_cadastro/icon.png" type="x-icon">
-    <title>Pandora</title>
-    
-</head>
-<body>
-    <!-- Sessão promocional -->
-    <section id="sessao_promocao">  <!-- Conteiner promoção -->
-        <div id="promocao"> <!-- Caixa para informações da promoção-->
-            <h1 id="titulo_promo">Promoção limitada!</h1> <!-- Titulo-->
-            <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In enim ratione, aut sint fugit sunt distinctio placeat! Excepturi cupiditate possimus quaerat nihil dolore facilis eveniet praesentium, adipisci, reiciendis itaque dicta.</p> <!-- Descrição da promoção com cronometro -->
-            <label id="tempo">25:06:24h</label>
-            <div id="fechar">
-                <img id="fechar_prom" src="img/icon_close.png" alt="Icone de fechar aba promocional">
-            </div> <!-- Img para opção de fechar aba promocional -->
-        </div> <!-- Fim da caixa informativa-->
-    </section> <!-- Fim da sessão promocional-->
-    <header id="cabecalho"> <!-- Cabecalho do site -->
-        
-        <!-- Área da logo -->
-        <div id="logo"> <!-- Conteiner da logo-->
-            <div id="cont_img_logo"> <!-- Caixa para img da logo -->
-                <img id="imagemlogo" src="img/logoheader.png" alt="Logo Pandora"> <!-- Img da Logo -->
-            </div> <!-- Fim da caixa para img da logo-->
-        </div><!-- Fim do conteiner da logo-->
-        
-        <!-- Área da caixa de pesquisa -->
-        <div id="caixa_busca"> <!-- Conteiner para caixa de busca de cursos-->
-            <div id='caixa_logo_pesquisa'> <!-- Caixa para icone lupa-->
-                <img id='logo_pesquisa' src="img/lupa_icon.png" alt="Lupa de pesquisa"> <!-- Img da lupa-->
-            </div> <!-- Fim da Caixa para icone lupa-->
-            <input type="text" id="busca" placeholder="Busque seu curso aqui..."> <!-- Input de pesquisa de cursos -->
-        </div> <!-- Fim do Conteiner para caixa de busca de cursos -->
-        
-        <!-- Links direcionais -->
-        <nav id="bar"> <!-- Caixa de links direcionais-->
-            <a href="">Sobre</a> <!-- Link para página página Sobre -->
-            <a href="">Contato</a> <!-- Link para página Contato-->
-            <a href="cadastro.html">Cadastrar</a> <!-- Link para página Cadastrar-->
-            <a href="login.html">Login</a> <!-- Link para página Login-->
-            </nav> <!-- Fim da Caixa de links direcionais-->
-        </header> <!-- Fim do Cabecalho do site-->
-        
-        
-        
-        
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="short icon" href="img_cadastro/icon.png" type="x-icon">
+        <title>Pandora</title>
+    </head>
+
+    <body>
+        <!-- Sessão promocional -->
+        <section id="sessao_promocao"> <!-- Conteiner promoção -->
+            <div id="promocao"> <!-- Caixa para informações da promoção-->
+                <h1 id="titulo_promo">Promoção limitada!</h1> <!-- Titulo-->
+                <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. In enim ratione, aut sint
+                    fugit sunt distinctio placeat! Excepturi cupiditate possimus
+                    quaerat nihil dolore facilis eveniet
+                    praesentium, adipisci, reiciendis itaque dicta.</p>
+                <!-- Descrição da promoção -->
+                <label id="tempo">25:06:24h</label> <!-- Timer -->
+                <div id="fechar"> <!-- Icone de fechar-->
+                    <img id="fechar_prom" src="css/img/icon_close.png"
+                        alt="Icone de fechar aba promocional" title="Fechar">
+                </div>
+            </div>
+        </section>
+        <header id="cabecalho"> <!-- Cabecalho do site -->
+
+            <!-- Área da logo -->
+            <div id="cont_img_logo">
+                <img id="imagemlogo" src="css/img/logoheader.png"
+                    alt="Logo Pandora"> <!-- Img da Logo -->
+            </div>
+
+            <!-- Links direcionais -->
+            <nav id="bar">
+                <a href>Sobre</a> <!-- Link para página página Sobre -->
+                <a href>Contato</a> <!-- Link para página Contato-->
+                <a href="cadastro.html">Cadastrar</a>
+                <!-- Link para página Cadastrar-->
+                <a href="login.html">Login</a> <!-- Link para página Login-->
+            </nav>
+        </header>
+
         <main id="corpo"> <!-- Corpo apresentação -->
             <article id="apresentacao"> <!-- Apresentação da empresa -->
                 <section id="texto"> <!-- Sessão para texto-->
-                    <h1>Imersao Tecnologica!</h1> <!-- Titulo -->
-                    <br> <!-- Quebra de linha-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur saepe quas dolore quibusdam</p> <!-- Descrição -->
+                    <h1>Imersao Tecnologica!</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo pariatur saepe quas dolore
+                        quibusdam</p>
                     <br>
-                    <button id="matricular"><span>Matricule-se</span></button> <!-- Botão para cadastrar-se-->
+                    <a id="matricular"
+                        href="cadastro.html"><span>Matricule-se</span></a>
+                    <!-- Botão para cadastrar-se-->
                 </section><!-- Fim da sessão de texto -->
                 <div id="banner"> <!-- Caixa para banner-->
-                    <img src="img/devesenvolvedor.gif" alt="Animação de um devesenvolvedor."> <!-- GIF do banner -->
+                    <img src="css/img/devesenvolvedor.gif" alt="Animação">
+                    <!-- GIF do banner -->
                 </div> <!-- Fim da caixa para banner-->
             </article> <!-- Fim da apresentação da empresa -->
-            
+
             <!-- Opções informativas -->
             <article id="apresentacao_plataformas">
                 <div id="informacoes">
-                <div class="multiplataformas">
-                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
-                    <span class="legenda">Versão Mobile disponível!</span>
+                    <div class="multiplataformas">
+                        <div class="imagem_inf"><img src="css/img/icon_cell.png"
+                                alt="Celular"></div>
+                        <span class="legenda">Versão Mobile disponível!</span>
+                    </div>
+
+                    <div class="multiplataformas">
+                        <div class="imagem_inf"><img src="css/img/icon_cell.png"
+                                alt="Celular"></div>
+                        <span class="legenda">Multiplataformas</span>
+                    </div>
+
+                    <div class="multiplataformas">
+                        <div class="imagem_inf"><img src="css/img/icon_cell.png"
+                                alt="Celular"></div>
+                        <span class="legenda">Multiplataformas</span>
+                    </div>
                 </div>
-                
-                <div class="multiplataformas">
-                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
-                    <span class="legenda">Multiplataformas</span>
-                </div>
-                
-                <div class="multiplataformas">
-                    <div class="imagem_inf"><img src="img/icon_cell.png" alt="Celular"></div>
-                    <span class="legenda">Multiplataformas</span>
-                </div>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2024 - Pandora</p>
-    </footer>
-    <script type="text/javascript" src="index.js"></script>
-</body>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2024 - Pandora</p>
+        </footer>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+
 </html>

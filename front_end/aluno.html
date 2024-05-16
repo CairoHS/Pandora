@@ -1,167 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="aluno.css">
-    <link rel="short icon" href="img_acesso/icon.png" type="x-icon">
-    <title>Pandora</title>
-    
-</head>
-<body>
-<section id="sessao_promocao">  <!-- Conteiner promoção -->
-    <div id="promocao"> <!-- Caixa para informações da promoção-->
-        <h1 id="titulo_promo">Promoção limitada!</h1> <!-- Titulo-->
-        <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In enim ratione, aut sint fugit sunt distinctio placeat! Excepturi cupiditate possimus quaerat nihil dolore facilis eveniet praesentium, adipisci, reiciendis itaque dicta.</p> <!-- Descrição da promoção com cronometro -->
-        <label id="tempo">25:06:24h</label>
-        <div id="fechar">
-            <img id="fechar_prom" src="img/icon_close.png" alt="Icone de fechar aba promocional">
-        </div> <!-- Img para opção de fechar aba promocional -->
-    </div> <!-- Fim da caixa informativa-->
-</section> <!-- Fim da sessão promocional-->
-    
-<header id="cabecalho"> <!-- Cabecalho do site -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/aluno.css">
+        <link rel="short icon" href="css/img/icon.png" type="x-icon">
+        <title>Pandora - Aluno</title>
 
-<!-- Área da logo -->
-    <div id="logo"> <!-- Conteiner da logo-->
-        <div id="cont_img_logo"> <!-- Caixa para img da logo -->
-            <img id="imagemlogo" src="img/logoheader.png" alt="Logo Pandora"> 
-        </div> <!-- Fim da caixa para img da logo-->
-    </div><!-- Fim do conteiner da logo-->
-        
-    <!-- Links direcionais -->
-    <nav id="bar"> <!-- Caixa de links direcionais-->
-        <a href="">inicio</a> 
-        <a href="">Meus Cursos</a>
-        <a href="">Monitoria</a> 
-        <a href="">Foruns</a>
-        <a href="">Planos</a>
-        <a href="">
-            <div id="foto_perfil">
-                <span>Perfil</span>
-                <img src="img_acesso/foto_perfil.png" alt="Imagem do perfil">
-            </div>
-        </a>
-    </nav> <!-- Fim da Caixa de links direcionais-->
+    </head>
+    <body>
+        <section id="sessao_promocao"> <!-- Conteiner promoção -->
+            <div id="promocao"> <!-- Caixa para informações da promoção-->
+                <h1 id="titulo_promo">Promoção limitada!</h1> <!-- Titulo-->
+                <p id="texto_promo">Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. In enim ratione, aut sint fugit sunt
+                    distinctio placeat! Excepturi cupiditate possimus quaerat
+                    nihil dolore facilis eveniet praesentium, adipisci,
+                    reiciendis itaque dicta.</p>
+                <!-- Descrição da promoção com cronometro -->
+                <label id="tempo">25:06:24h</label>
+                <div id="fechar">
+                    <img id="fechar_prom" src="css/img/icon_close.png"
+                        alt="Icone de fechar aba promocional">
+                </div> <!-- Img para opção de fechar aba promocional -->
+            </div> <!-- Fim da caixa informativa-->
+        </section> <!-- Fim da sessão promocional-->
 
-</header> <!-- Fim do Cabecalho do site-->
+        <header id="cabecalho"> <!-- Cabecalho do site -->
 
+            <!-- Área da logo -->
+            <div id="logo"> <!-- Conteiner da logo-->
+                <div id="cont_img_logo"> <!-- Caixa para img da logo -->
+                    <img id="imagemlogo" src="css/img/logoheader.png"
+                        alt="Logo Pandora">
+                </div> <!-- Fim da caixa para img da logo-->
+            </div><!-- Fim do conteiner da logo-->
 
-<main>
-    <article id="conteiner_cursos">
-    <h1>Novos cursos para aproveitar!</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quibusdam animi minima error iure iusto ullam tempore eligendi voluptatum ad perspiciatis, molestiae culpa, eos eaque sequi minus corrupti totam incidunt?</p>
-        <section id="cursos">
-            <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
+            <!-- Links direcionais -->
+            <nav id="bar"> <!-- Caixa de links direcionais-->
+                <a href>Inicio</a>
+                <a href>Meus Cursos</a>
+                <a href>Monitoria</a>
+                <a href>Foruns</a>
+                <a href>Planos</a>
+                <a href>
+                    <div id="foto_perfil">
+                        <span>Perfil</span>
+                        <img src="css/img/foto_perfil.png"
+                            alt="Imagem do perfil">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        
-                <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        
-                <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        
-                <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        
-                <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        
-                <div class="caixa_cursos">
-                <div class="video">
-                    <iframe width="350px" height="196.875" src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                    <h3>teste</h3>
-                    <div class="educador">
-                        <div class="iconprof">
-                            <img src="img_acesso/iconeprofessor.png" alt="">
-                        </div>
-                        <label>
-                            Prof. Fulano - Graduado em Eng. de software
-                        </label>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vel</p>
-                </div>
-        </section>
-    </article>
-    <article>
-        <h1>Categorias:</h1>
-        <section>
+                </a>
+            </nav> <!-- Fim da Caixa de links direcionais-->
 
-        </section>
-    </article>
-</main>
-        
+        </header> <!-- Fim do Cabecalho do site-->
+
+        <main>
+            <article id="conteiner_cursos">
+                <h1>Novos cursos para aproveitar!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Molestias quibusdam animi minima error iure iusto ullam
+                    tempore eligendi voluptatum ad perspiciatis, molestiae
+                    culpa, eos eaque sequi minus corrupti totam incidunt?</p>
+                <section id="cursos">
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+
+                    <div class="caixa_cursos">
+                        <div class="video">
+                            <iframe width="350px" height="196.875"
+                                src="https://www.youtube-nocookie.com/embed/9xOi4hnfYTw?si=jz18is8e0cIIYG2t"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3>teste</h3>
+                        <div class="educador">
+                            <div class="iconprof">
+                                <img src="css/img/iconeprofessor.png" alt>
+                            </div>
+                            <label>
+                                Prof. Fulano - Graduado em Eng. de software
+                            </label>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eius vel</p>
+                    </div>
+                </section>
+            </article>
+            <article>
+
+                <section>
+
+                </section>
+            </article>
+        </main>
+
         <footer>
-    <p>&copy; 2024 - Pandora</p>
-</footer>
+            <p>&copy; 2024 - Pandora</p>
+        </footer>
 
-<script type="text/javascript" src="aluno.js"></script>
-</body>
+        <script type="text/javascript" src="aluno.js"></script>
+    </body>
 </html>

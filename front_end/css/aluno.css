@@ -163,7 +163,7 @@ body{
 
 #cursos{
     display: grid;
-    grid-template-columns: 370px 370px 370px;
+    grid-template-columns: 400px 400px 400px;
     margin: 20px;
     justify-content: center ;
     text-align: center;
