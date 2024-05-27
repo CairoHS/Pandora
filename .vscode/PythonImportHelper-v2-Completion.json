@@ -1,0 +1,111 @@
+[
+    {
+        "label": "SQLModel",
+        "importPath": "sqlmodel",
+        "description": "sqlmodel",
+        "isExtraImport": true,
+        "detail": "sqlmodel",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlmodel",
+        "description": "sqlmodel",
+        "isExtraImport": true,
+        "detail": "sqlmodel",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "sqlmodel",
+        "description": "sqlmodel",
+        "isExtraImport": true,
+        "detail": "sqlmodel",
+        "documentation": {}
+    },
+    {
+        "label": "SQLModel",
+        "importPath": "sqlmodel",
+        "description": "sqlmodel",
+        "isExtraImport": true,
+        "detail": "sqlmodel",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "StaticFiles",
+        "importPath": "fastapi.staticfiles",
+        "description": "fastapi.staticfiles",
+        "isExtraImport": true,
+        "detail": "fastapi.staticfiles",
+        "documentation": {}
+    },
+    {
+        "label": "criar_banco",
+        "importPath": "core.conn.conn",
+        "description": "core.conn.conn",
+        "isExtraImport": true,
+        "detail": "core.conn.conn",
+        "documentation": {}
+    },
+    {
+        "label": "criar_banco",
+        "kind": 2,
+        "importPath": "back_end.core.conn.conn",
+        "description": "back_end.core.conn.conn",
+        "peekOfCode": "def criar_banco():\n    SQLModel.metadata.create_all(engine)",
+        "detail": "back_end.core.conn.conn",
+        "documentation": {}
+    },
+    {
+        "label": "url_banco",
+        "kind": 5,
+        "importPath": "back_end.core.conn.conn",
+        "description": "back_end.core.conn.conn",
+        "peekOfCode": "url_banco = f\"postgresql://{url}\"\nengine = create_engine(url_banco)\ndef criar_banco():\n    SQLModel.metadata.create_all(engine)",
+        "detail": "back_end.core.conn.conn",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "back_end.core.conn.conn",
+        "description": "back_end.core.conn.conn",
+        "peekOfCode": "engine = create_engine(url_banco)\ndef criar_banco():\n    SQLModel.metadata.create_all(engine)",
+        "detail": "back_end.core.conn.conn",
+        "documentation": {}
+    },
+    {
+        "label": "Usuario",
+        "kind": 6,
+        "importPath": "back_end.core.models.usuario",
+        "description": "back_end.core.models.usuario",
+        "peekOfCode": "class Usuario(SQLModel, table=True):\n    id: Optional[int] = Field(default=None, primary_key=True)\n    nome: str\n    email: str\n    senha: str",
+        "detail": "back_end.core.models.usuario",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "back_end.main",
+        "description": "back_end.main",
+        "peekOfCode": "app = FastAPI()\napp.mount(\"/\", StaticFiles(directory=\"../front_end\", html=True), name=\"front_end\")\nif __name__ == \"__main__\":\n    criar_banco()",
+        "detail": "back_end.main",
+        "documentation": {}
+    }
+]
