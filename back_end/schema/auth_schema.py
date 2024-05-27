@@ -4,5 +4,9 @@ class Cadastro(BaseModel):
     nome: str
     sobrenome: str
     email: str
-    usuario: str
+    login: str
+    senha: str
+
+class Login(BaseModel):
+    login: str
     senha: str
