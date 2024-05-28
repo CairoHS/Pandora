@@ -3,7 +3,7 @@ from sqlmodel import Session
 from conn.conn import engine
 
 # Schemas
-from schema.auth_schema import Cadastro, Login
+from schema.auth_schema import Cadastro, Login, InfoToken, Token
 
 #senha
 from utils.encripta_senha import hash_senha, verificar_senha
@@ -15,6 +15,12 @@ from models.usuario import Usuario
 # comandos
 from sqlmodel import select #select mysql
 from sqlalchemy.orm import selectinload #pegar o filho junto
+
+#converter para Json
+from pydantic import Json
+
+#opcoes para token
+from utils.token import criar_token_acesso
 
 class AuthController:
     def cadastrar(cadastro: Cadastro):
@@ -47,9 +53,19 @@ class AuthController:
     
     def login(dados_login: Login):
         with Session(engine) as session:
+           
+           # pega dados do usuario e credencial
            query = select(Usuario).where(Usuario.login == dados_login.login).options(selectinload(Usuario.credencial))
            resultado = session.exec(query).first()
-           return resultado
+
+            # pega dados usados no token e faz
+           dados_token =InfoToken.recebe_usuario_model(resultado)
+           jwt_token = criar_token_acesso(dados_token)
+
+           return Token(token_acesso=jwt_token, token_tipo = "Bearer")
+
+
+
            
 
 

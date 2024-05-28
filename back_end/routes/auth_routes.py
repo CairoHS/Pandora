@@ -1,10 +1,10 @@
 from fastapi import APIRouter
-from controllers.auth_controller import AuthController, Login
+from controllers.auth_controller import AuthController
 
 #bycript para hash de senha
 
 ## Schemas
-from schema.auth_schema import Cadastro
+from schema.auth_schema import Login, Token, Cadastro
 
 router = APIRouter()
 
@@ -13,6 +13,6 @@ router = APIRouter()
 async def cadastrar(info_cadastro: Cadastro):
     return AuthController.cadastrar(info_cadastro)
 
-@router.post("/login")
+@router.post("/login", response_model = Token)
 async def login(info_login: Login):
     return AuthController.login(info_login)
