@@ -23,21 +23,22 @@
       <h2>Login</h2>
       <hr>
       <br>
-        <form method="post" action="">
-          <span>Login:</span><input type="email" placeholder="Login"><br><br>
+        <div>
+          <span>Login:</span><input type="text" placeholder="Login" id="login"><br><br>
     
-          <span>Senha:</span><input type="password" placeholder="Senha">
+          <span>Senha:</span><input type="password" placeholder="Senha" id="senha">
+          <span id="msg"></span>
           <br><br>
 
           
 
           <a href="">Esqueceu a senha?</a>
           <br><br>
-          <button type="submit">Acessar</button>
-        </form>
+          <button onclick="validacao_login()">Acessar</button>
+        </div>
     </div>
   </main>
   <footer><p>&copy; 2024</p></footer>
-  <script src="js/index.js"></script>
+  <script src="js/login_validacao.js"></script>
 </body>
 </html>

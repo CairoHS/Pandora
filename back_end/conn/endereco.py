@@ -1,0 +1,1 @@
+url = "mysql+pymysql://root:0000@localhost:3306/pandora"
