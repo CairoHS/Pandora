@@ -28,34 +28,36 @@
       <hr>
       <br>
 
-        <form method="post" action="">
-            
+        <div>
             <span>Nome:</span>
-            <input type="text" name="nome" placeholder="Insira seu primeiro nome." required>
+            <input id="nome" type="text" name="nome" placeholder="Insira seu primeiro nome." required>
             <br><br>
 
             <span>Sobrenome:</span>
-            <input type="text" name="sobrenome" placeholder="Insira seu nome restante." required>
+            <input id="sobrenome" type="text" name="sobrenome" placeholder="Insira seu nome restante." required>
             <br><br>
 
             
             <span>E-mail:</span>
-            <input type="email" placeholder="Exemplo@exemplo.com" required>
+            <input id="email" type="email" placeholder="Exemplo@exemplo.com" required>
             <br><br>
             
-            <span>Login:</span><input type="text" placeholder="Login" required>
+            <span>Login:</span><input id="login" type="text" placeholder="Login" required>
             <br><br>
     
-            <span>Senha:</span><input type="password" placeholder="Senha" required>
+            <span>Senha:</span><input id="senha" type="password" placeholder="Senha" required>
+            
             <br>
             <span>Confirme sua senha:</span><input type="password" placeholder="Senha" required>
 
             <p id="termo">Ao acessar este site, presumimos que você aceita estes <a href="https://www.jusbrasil.com.br/modelos-pecas/modelo-politica-de-privacidade/784935103" target="_blank">termos e condições</a> em sua totalidade. Não continue a utilizar o site da se não aceitar todos os termos e serviços referidos nesta página.</p>
 
-            <button type="submit">Acessar</button>
-        </form>
+            <span id="msg"></span>
+            <button onclick="validacao_cadastro()"> Acessar</button>
+        </div>
     </article>
   </main>
   <footer><p>&copy; 2024</p></footer>
+  <script src="js/cadastro_validacao.js"></script>
 </body>
 </html>
