@@ -1,10 +1,11 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from controllers.auth_controller import AuthController
+from auth.token import authentica_token_acesso
 
 #bycript para hash de senha
 
 ## Schemas
-from schema.auth_schema import Login, Token, Cadastro
+from schema.padrao_schema import Login, Token, Cadastro
 
 router = APIRouter()
 
@@ -16,3 +17,7 @@ async def cadastrar(info_cadastro: Cadastro):
 @router.post("/login", response_model = Token)
 async def login(info_login: Login):
     return AuthController.login(info_login)
+
+@router.post("/aluno")
+async def aluno(token: str = Depends(authentica_token_acesso)):
+    return {"token":"funciona"}

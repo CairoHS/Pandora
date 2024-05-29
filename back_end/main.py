@@ -2,11 +2,9 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from conn.conn import cria_banco
 from routes import auth_routes
-from schema.auth_schema import InfoToken
-from fastapi.security import OAuth2PasswordBearer
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
 
 app = FastAPI()
 

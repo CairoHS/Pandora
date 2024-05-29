@@ -3,7 +3,7 @@ from sqlmodel import Session
 from conn.conn import engine
 
 # Schemas
-from schema.auth_schema import Cadastro, Login, InfoToken, Token
+from schema.padrao_schema import Cadastro, Login, InfoToken, Token
 
 #senha
 from utils.encripta_senha import hash_senha, verificar_senha
@@ -20,7 +20,7 @@ from sqlalchemy.orm import selectinload #pegar o filho junto
 from pydantic import Json
 
 #opcoes para token
-from utils.token import criar_token_acesso
+from auth.token import criar_token_acesso
 
 class AuthController:
     def cadastrar(cadastro: Cadastro):
