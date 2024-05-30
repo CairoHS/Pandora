@@ -1,1 +1,1 @@
-url = "mysql+pymysql://root:0000@localhost:3306/pandora"
+url = "mariadb+pymysql://root@localhost:3306/pandora"

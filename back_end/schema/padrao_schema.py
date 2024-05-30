@@ -24,8 +24,7 @@ class InfoToken(BaseModel):
     email: str
     nome: str
     sobrenome: str
-    atualizar:Optional[float]= 0
-    expirar: Optional[float] = 0
+    exp: Optional[float] = 0
     
     @classmethod
     def recebe_usuario_model(cls, modelo: Usuario) -> 'InfoToken':
@@ -41,25 +40,16 @@ class InfoToken(BaseModel):
             return False
         if self.sobrenome != outro_token.sobrenome:
             return False
-        print(self.expirar, tempo_comparar, self.expirar - tempo_comparar)
-        if self.expirar < tempo_comparar:
+        print(self.exp, tempo_comparar, self.exp - tempo_comparar)
+        if self.exp < tempo_comparar:
             return False
         
         return True
     
-    def atualizar_token(self, tempo: float) -> bool:
-        if self.atulizar < tempo:
-            return True
-        return False
 
 
 class Token(BaseModel):
-    token_acesso: str
-    token_tipo: str
-
-
-
-
+    token: str
 
 
 

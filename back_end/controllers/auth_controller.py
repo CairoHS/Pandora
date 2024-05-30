@@ -1,3 +1,5 @@
+from fastapi import Response
+
 #enginer para a session
 from sqlmodel import Session
 from conn.conn import engine
@@ -20,7 +22,7 @@ from sqlalchemy.orm import selectinload #pegar o filho junto
 from pydantic import Json
 
 #opcoes para token
-from auth.token import criar_token_acesso
+from auth.token import criar_token_acesso, colocar_token_cookie
 
 class AuthController:
     def cadastrar(cadastro: Cadastro):
@@ -51,7 +53,7 @@ class AuthController:
         
         return f"salvo"
     
-    def login(dados_login: Login):
+    def login(dados_login: Login, response: Response):
         with Session(engine) as session:
            
            # pega dados do usuario e credencial
@@ -60,9 +62,13 @@ class AuthController:
 
             # pega dados usados no token e faz
            dados_token =InfoToken.recebe_usuario_model(resultado)
-           jwt_token = criar_token_acesso(dados_token)
 
-           return Token(token_acesso=jwt_token, token_tipo = "Bearer")
+
+           jwt_token = criar_token_acesso(dados_token)
+           colocar_token_cookie(jwt_token, response)
+           
+
+           return {"status": "logado"}
 
 
 
