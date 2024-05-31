@@ -31,7 +31,9 @@ while true; do
 
             echo "Opção escolhida Back"
 
-            python3 -m venv $VENV
+            if [ ! -d $VENV ]; then
+                python3 -m venv $VENV
+            fi
 
             source $VENV/bin/activate
 
@@ -39,9 +41,11 @@ while true; do
                 pip install -r $REQUIREMENTS
             fi
 
-            gnome-terminal -- python3 $PROGRAM
+            gnome-terminal -- bash -c "source $VENV/bin/activate; python3 $PROGRAM; exec bash"
 
             cd ..
+
+            deactivate
             ;;
 
         0)
