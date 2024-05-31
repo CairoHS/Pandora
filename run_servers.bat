@@ -1,5 +1,5 @@
 @echo off
-set "VENV=venv"
+set "VENV=.venv"
 set "REQUIREMENTS=requirements.txt"
 set "PROGRAM=main.py"
 
