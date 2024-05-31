@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .then(
         response => {
-            console.log(response.status)
+
+            if(response.status == 200){
+
+                window.location.href = "/pages/aluno.html";
+            }
             if (!response.ok) {
                 
-                if(response.status == 401 || response.status == 403){
-                    window.location.href = "/login.html";
-                }
+                
                 throw new Error('Erro ao enviar dados');
             }
     })
