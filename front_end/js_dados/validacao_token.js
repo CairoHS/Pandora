@@ -1,8 +1,6 @@
-import { api_autenticar } from "/js/conexao/server_const"
-
 document.addEventListener('DOMContentLoaded', function() {
     
-    fetch(`${api_autenticar}/aluno`, {
+    fetch('/get/aluno', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
