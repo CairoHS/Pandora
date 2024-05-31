@@ -1,3 +1,5 @@
+import { api_autenticar } from "/js/conexao/server_const"
+
 let botao = document.querySelector("#botao");
 botao.addEventListener('click', (e) => validacao_login(e))
 
@@ -8,7 +10,7 @@ function validacao_login(e){
     let login = document.getElementById('login').value;
     let senha = document.getElementById('senha').value;
 
-    fetch('/login', {
+    fetch(`${api_autenticar}/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -1,3 +1,5 @@
+import { api_autenticar } from "/js/conexao/server_const"
+
 function validacao_cadastro(e){
     e.preventDefault();
     let nome = document.getElementById('nome').value;
@@ -7,7 +9,7 @@ function validacao_cadastro(e){
     let senha = document.getElementById('senha').value;
 
 
-    fetch('/cadastro', {
+    fetch(`${api_autenticar}/cadastro`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -6,6 +6,7 @@ REQUIREMENTS="requirements.txt"
 
 PROGRAM="main.py"
 
+SCRIPT_NODE="teste"
 
 while true; do
     clear
@@ -23,7 +24,26 @@ while true; do
         1)
         echo "Opção escolhida Front"
 
-        ;;
+            cd front_end
+
+            # Verifica se o npm está instalado
+            if ! command -v npm &> /dev/null
+            then
+                echo "npm não está instalado. Por favor, instale-o para continuar."
+                exit 1
+            fi
+
+            # Verifica se o package.json está presente
+            if [ ! -f "package.json" ]; then
+                echo "Arquivo package.json não encontrado neste diretório."
+                exit 1
+            fi
+
+            # Executa o comando npm run
+            gnome-terminal -- npm run $SCRIPT_NODE
+
+            cd ..
+            ;;
 
         2)
 
