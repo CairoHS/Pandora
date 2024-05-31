@@ -1,3 +1,5 @@
+import uvicorn
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from conn.conn import cria_banco
@@ -15,3 +17,8 @@ app.include_router(auth_routes.router)
 app.mount("/", StaticFiles(directory="../front_end", html=True), name="front_end")
 
 cria_banco()
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)

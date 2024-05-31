@@ -1,3 +1,7 @@
+let botao = document.querySelector("#botao");
+botao.addEventListener('click', (e) => validacao_login(e))
+
+
 function validacao_login(e){
 
     e.preventDefault();
@@ -17,6 +21,10 @@ function validacao_login(e){
                 throw new Error('Erro ao enviar dados');
             }
 
+            if(status_response == 200) {
+                window.location.href = "pages/index.html";
+            }
+
             status_response = response.status;
 
             return response.json()
@@ -28,12 +36,8 @@ function validacao_login(e){
             //console.log('Status:', status_response);
 
             //status 200 é que a resposta chegou bem
-            if(status_response == 200) {
-                window.location.href = "pages/index.html";
-            }
+            
     })
     .catch(error => console.error('Error:', error));
 }
 
-let botao = document.querySelector("#botao");
-botao.addEventListener('click', (e) => validacao_login(e))

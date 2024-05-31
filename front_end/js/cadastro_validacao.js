@@ -7,7 +7,7 @@ function validacao_cadastro(e){
     let senha = document.getElementById('senha').value;
 
 
-    let variavel = fetch('/cadastro', {
+    fetch('/cadastro', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

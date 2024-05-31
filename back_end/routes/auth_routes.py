@@ -10,7 +10,7 @@ from schema.padrao_schema import Login, Token, Cadastro
 router = APIRouter()
 
 #observação resolver redundancia nos Schemas
-@router.post("/cadastro", response_model = Token)
+@router.post("/cadastro", response_model = str)
 async def cadastrar(info_cadastro: Cadastro):
     return AuthController.cadastrar(info_cadastro)
 
