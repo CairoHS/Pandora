@@ -1,5 +1,14 @@
 @charset 'UTF-8';
 
+:root{
+    --fundo: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, #090f26,rgb(9,15,38));
+    --fundomenu: #090f26a6;
+    --fundoinf: #ffffff44;
+    --fontebranca: #ffffff;
+    --fonteamarelo: #fbff00;
+    --bordabranca: #ffffff;
+}
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,18 +17,15 @@ body{
     margin: 0; padding: 0;
     background-image: var(--fundo);
     background-repeat: no-repeat;
+    background-color: var(--fundomenu);
 }
 
-:root{
-    --fundo: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, rgb(9,15,38),rgb(9,15,38));
-    --fontebranca: #ffffff;
-}
 
 /* Estlização do cabecalho e logo */
 #cabecalho{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #cabecalho-logo{
@@ -27,11 +33,113 @@ body{
     margin: auto 0;
 }
 
-#imagem-logo{
+.cabecalho-imagem{
     width: 100%;
 }
 
 #cabecalho-apresentacao{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--fontebranca);
+}
+
+#cabecalho-notificacao{
+    margin: auto 0 ;
+    width: 30px;
+}
+
+/* Corpo de informações */
+
+#informacoes{
+    display: flex;
+}
+
+/* Menu */
+#menu{
+    display: block;
+    width:  380px;
+}
+
+/* Perfil */
+
+#informacoes_professor{
+    width: 100%;
+    color: var(--fontebranca);
+}
+
+#informacoes_professor_img{
+    margin: auto;
+    width: 200px;
+    padding: 10px 10px 8px 10px;
+    border: 8px double white;
+    border-radius: 50% ;
+}
+
+#informacoes_professor img{
+    margin: 0;
+    border-radius: 50%;
+    width: 200px
+}
+
+#informacoes_professor > h1 , p{
+    margin: 10px auto;
+    width: max-content;
+}
+
+/* Opções */
+
+#informacoes-opcoes{
+    list-style: none;
+    margin: 0; padding: 0;
+    
+}
+
+#informacoes-opcoes li{
+    width: 100%;
+}
+
+.menu-op{
+    background-color: #090f26;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--fontebranca);
+}
+
+#informacoes-subop{
+    list-style-type: none;
+}
+
+/* Copyright */
+
+.copyright{
+    margin: 0; padding: 10px;
+    width: max-content;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--fontebranca);
+}
+
+.copyright strong{
+    font-weight: bold;
+}
+
+/* Página inicial*/
+
+#pagina-inicial{
+    padding: 0 20px;
+    text-align: center;
+    background-color: var(--fundoinf);
+    border-radius: 20px 0 0 0 ;
+}
+
+#pagina-inicial-titulo{
+    font-size: 8vh;
+    text-transform: uppercase;
+    color: var(--fonteamarelo);
+}
+
+.pagina-inicial-subtitulo{
+    text-align: center;
     color: var(--fontebranca);
 }
