@@ -1,0 +1,21 @@
+# usando python alpine
+FROM python:3.11-alpine
+
+WORKDIR /app
+
+# Copia o arquivo de dependências para o diretório de trabalho
+COPY ./app/requirements.txt .
+
+# Instala as dependências
+RUN apk add --no-cache build-base libressl-dev libffi-dev python3-dev && \
+    pip install --no-cache-dir -r requirements.txt && \
+    apk del build-base libressl-dev libffi-dev python3-dev
+
+# Copia o restante dos arquivos para o diretório de trabalho
+COPY ./app .
+
+# Expõe a porta 8000 para acesso externo
+EXPOSE 8000
+
+# Comando para executar o FastAPI
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

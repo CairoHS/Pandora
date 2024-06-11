@@ -1,1 +1,0 @@
-api_autenticar = "localhost:8000"

@@ -1,0 +1,14 @@
+services:
+  ligar:
+    build:
+     context: .
+     dockerfile: ./docker/Dockerfile.txt
+    container_name: micro_autenticar
+    ports:
+      - "8000:8000"
+    networks:
+      - minha-rede
+      
+networks:
+  minha-rede:
+    external: true

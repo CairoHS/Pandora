@@ -1,0 +1,19 @@
+# usando node alpine
+FROM node:20.14-alpine
+
+WORKDIR /app
+
+# Copia o arquivo de dependências para o diretório de trabalho
+COPY ./app/package*.json .
+
+# Instala as dependências
+RUN npm install --no-package-lock
+
+# Copia o restante dos arquivos para o diretório de trabalho
+COPY ./app .
+
+# Expõe a porta 8000 para acesso externo
+EXPOSE 3000
+
+# Comando para executar o FastAPI
+CMD ["node", "app", "js"]

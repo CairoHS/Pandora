@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "04b";
+    src: url(/fontes/04B_30__.TTF) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'thirteen';
+    src: url(/fontes/thirteen_pixel_fonts.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "neuropol";
+    src: url(/fontes/neuropol.otf) format('opentype');
+}
+
+:root {
+    --fundo: #090F26;
+    --fundo2: #111e50;
+    --fundoBox: #ffffff50;
+    --fundoPromo: #ffffff25;
+    --fundorodape: #252941;
+    --fonte: #ffffff;
+    --fonte2: #000000;
+    --tom1: #101F38;
+    --tom2: #20385E;
+    --sombra: #00000036;
+    --sombra2: #ffffff67;
+    --fundoinput: #a3a3a315;
+    --bordas: #101f3857;
+    --bordasclaras: #ffffff57;
+}
+
+body {
+    background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148, 0.06) 0%, rgba(148, 148, 148, 0.06) 50%, rgba(63, 63, 63, 0.06) 50%, rgba(63, 63, 63, 0.06) 100%), radial-gradient(circle at 68% 87%, rgba(66, 66, 66, 0.06) 0%, rgba(66, 66, 66, 0.06) 50%, rgba(105, 105, 105, 0.06) 50%, rgba(105, 105, 105, 0.06) 100%), radial-gradient(circle at 38% 50%, rgba(123, 123, 123, 0.06) 0%, rgba(123, 123, 123, 0.06) 50%, rgba(172, 172, 172, 0.06) 50%, rgba(172, 172, 172, 0.06) 100%), linear-gradient(90deg, rgb(9, 15, 38), rgb(9, 15, 38));
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: var(--fonte);
+    min-height: 100vh;
+}
+
+/*SESSÃO PROMOCIONAL*/
+
+#promocao {
+    display: flex;
+    margin: 0px;
+    padding: 7px;
+    background-color: var(--fundoPromo);
+    font-size: 15px;
+    justify-content: space-between;
+    transition: ease-in-out;
+}
+
+#titulo_promo {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#texto_promo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}
+
+#fechar {
+    margin: auto 10px;
+    width: 40px;
+}
+
+#fechar_prom {
+    filter: invert();
+    width: 100%;
+}
+
+#tempo {
+    margin: auto 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#cronometro {
+    width: min-content;
+}
+
+
+/*CABECALHO*/
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+
+
+#cont_img_logo {
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 150px;
+    height: min-content;
+    ;
+}
+
+#imagemlogo {
+    width: 100%;
+}
+
+#bar {
+    margin: auto 15px;
+}
+
+#bar>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'neuropol', Arial, Helvetica, sans-serif;
+    color: var(--fonte);
+}
+
+
+/*Corpo*/
+/* Apresentacao */
+#apresentacao {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#banner {
+    margin: 30px auto 0 auto;
+    width: 35vw;
+}
+
+#banner>img {
+    width: 100%;
+    height: auto;
+}
+
+#texto {
+    display: block;
+    padding: 20px; margin: 30px 0 auto auto;
+    width: 50vw;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+#texto>h1 {
+    padding: 10px 0px 0px 0px;
+    margin: 10px 0 20px 0;
+    font-family: "thirteen", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--fonte);
+}
+
+#texto>p {
+    font-size: 30px;
+    text-align: justify;
+    margin: 30px 0px;
+    width: 50vw;
+}
+
+#matricular {
+    display: block;
+    padding: 20px; margin: 100px auto 0 auto;
+    width: 20vw;
+    border-radius: 40px 0 40px 0;
+    border: 1px solid var(--bordas);
+    box-shadow: 0px 0px 40px #ffffff67;
+    background-color: white;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.205));
+    transition: 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: var(--fonte2);
+}
+
+#matricular:active {
+    scale: 0.90;
+    transition: 0.1s;
+}
+
+#matricular:hover {
+    background-color: #ffffffd2;
+    box-shadow: 0px 0px 60px #ffffff67;
+}
+
+
+/* Informativos */
+
+#apresentacao_plataformas {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+#informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 1vw;
+    padding: 15px;
+}
+
+.multiplataformas {
+    display: flex;
+    border: 2px solid var(--bordasclaras);
+    border-radius: 10px;
+    min-width: 30vw;
+    padding: 5px;
+}
+
+.imagem_inf {
+    padding: 5px;
+    margin: auto 0px;
+    width: 25px;
+    opacity: 80%;
+}
+
+.imagem_inf>img {
+    width: 100%;
+    filter: invert();
+}
+
+.legenda {
+    margin: auto 0px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--fonte);
+}
+
+footer {
+    position: sticky;
+    top: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--fundorodape);
+}
+
+footer>p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Tela com até 1024px NOTEBOOK*/
+
+@media (max-width: 1024px) {
+
+    /*Cabecalho*/
+
+    #cont_img_logo {
+        /* Caixa para img da logo */
+        width: 130px;
+        /*Comprimento*/
+        transition: 0.5s;
+    }
+
+    #caixa_logo_pesquisa {
+        height: 25px;
+    }
+
+    #busca {
+        height: 25px;
+        font-size: 11px;
+    }
+
+    /*CORPO*/
+
+    #texto>h1 {
+        font-size: 30px;
+    }
+
+    #texto>p {
+        font-size: 20px;
+    }
+
+    /*Informativos*/
+
+    .imagem_inf {
+        padding: 5px;
+        width: 25px;
+        opacity: 30%;
+    }
+
+    .imagem_inf>img {
+        width: 100%;
+    }
+
+}
+
+/* Tela com até 768px Tablet*/
+
+@media (max-width: 768px) {
+
+
+    /*Promoçao*/
+    #promocao {
+        font-size: 12px;
+    }
+
+    /*Corpo*/
+
+    #texto>h1 {
+        font-size: 20px;
+    }
+
+    #texto>p {
+        font-size: 15px;
+    }
+
+    /*Informativos*/
+    #informacoes {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        justify-content: space-around;
+        margin: 0px auto;
+    }
+
+    .imagem_inf {
+        padding: 5px;
+        width: 25px;
+        opacity: 30%;
+    }
+
+
+    .multiplataformas {
+        min-width: 30vw;
+    }
+}
+
+
+
+/* Tela com até 425px Celular*/
+
+@media (max-width: 425px) {
+    #cabecalho {
+        /*Header*/
+        display: grid;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #logo {
+        /*Conteiner para logo*/
+        margin: 10px 0px;
+        padding: 0;
+        width: 100vw;
+        justify-content: center;
+        background-color: var(--azul1);
+    }
+
+    #cont_img_logo {
+        /*Conteiner para imagem da Logo*/
+        width: 130px;
+        height: auto;
+    }
+
+    #imagemlogo {
+        /*Imagem da logo*/
+        padding: auto;
+        justify-content: center;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        background-image: none;
+    }
+
+    #caixa_busca {
+        /*Caixa de pesquisa*/
+        display: none;
+    }
+
+
+    #bar {
+        /*Conteiner para Links direcionais*/
+        display: flex;
+        justify-content: space-between;
+        max-width: 425px;
+        min-width: 320px;
+        margin: 0px;
+        width: 100vw;
+    }
+
+    #bar>a {
+        /*Links direcionais*/
+        font-size: 8px;
+        padding: 10px;
+    }
+
+    /*Corpo*/
+
+    /* Promoção */
+
+    #promocao {
+        font-size: 12px;
+    }
+
+    /* Apresentacao */
+    #apresentacao {
+        display: grid;
+        width: 100%;
+        text-align: center;
+    }
+
+    #banner {
+        margin: auto;
+        width: 86vw;
+    }
+
+    #texto {
+        width: 75vw;
+        height: 100vw;
+    }
+
+    #texto>h1 {
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    #texto>p {
+        font-size: 4vw;
+    }
+
+
+    /* Informativos */
+
+    #apresentacao_plataformas {
+        display: none;
+    }
+
+    #informacoes {
+        display: none;
+    }
+
+    .multiplataformas {
+        display: none;
+    }
+
+}
+
+/* Tela com até 375px Celular*/
+
+@media (max-width: 375px) {
+    #bar {
+        /*Conteiner para Links direcionais*/
+        max-width: 375px;
+        justify-content: space-between;
+    }
+
+    #bar>a {
+        margin: 0;
+    }
+}

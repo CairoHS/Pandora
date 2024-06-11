@@ -1,1 +1,0 @@
-url = "mariadb+pymysql://root@localhost:3306/pandora"

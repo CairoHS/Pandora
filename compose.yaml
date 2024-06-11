@@ -1,0 +1,46 @@
+
+services:
+  micro-nginx:
+    container_name: micro_nginx
+    build:
+      context: ./nginx
+      dockerfile: docker/Dockerfile.txt
+    ports:
+      - "8080:80"
+    networks:
+      - minha-rede
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  micro-autenticar:
+    container_name: micro_autentificacao
+    build:
+      context: ./autentificacao
+      dockerfile: docker/Dockerfile.txt
+    ports:
+      - "8000:8000"
+    networks:
+      - minha-rede
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  micro-front:
+    container_name: micro_front
+    build:
+      context: ./front
+      dockerfile: docker/Dockerfile.txt
+    ports:
+      - "3000:3000"
+    networks:
+      - minha-rede
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+networks:
+  minha-rede:
